@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Maison Lemony — Fiche d'immersion</title>
+<style>
+  @page { size: 128mm 228mm; margin: 0; }
+  :root {
+    --ink: #1b1d1f; --paper: #f4f0e8; --sand: #c9bfae; --gold: #a8854a;
+    --night: #14191b; --muted: #6b665d; --red: #8c2f2b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 9.6pt; line-height: 1.42; color: var(--ink); background: var(--paper); }
+  .page { width: 128mm; height: 228mm; padding: 11mm 10mm 9mm; page-break-after: always; position: relative; overflow: hidden; }
+  .page:last-child { page-break-after: auto; }
+  .dark { background: var(--night); color: #e9e4da; }
+  .dark .k { color: var(--sand); }
+  h1, h2, h3 { font-family: "Baskerville", "Didot", Georgia, serif; font-weight: normal; }
+  h1 { font-size: 30pt; letter-spacing: .06em; line-height: 1.05; }
+  h2 { font-size: 17pt; margin-bottom: 3mm; letter-spacing: .02em; }
+  h3 { font-size: 11.5pt; margin: 3.2mm 0 1.2mm; color: var(--gold); }
+  .k { font-size: 7.2pt; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-bottom: 2mm; }
+  p { margin-bottom: 1.8mm; }
+  ul { margin: 0 0 2mm 4mm; } li { margin-bottom: 1.1mm; }
+  b { font-weight: 600; }
+  img { display: block; width: 100%; object-fit: cover; border-radius: 1.2mm; }
+  .num { position: absolute; bottom: 5mm; right: 10mm; font-size: 7pt; color: var(--muted); letter-spacing: .15em; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm; }
+  .box { border: .3mm solid var(--sand); border-radius: 1.5mm; padding: 2.6mm 3mm; margin-bottom: 2.5mm; }
+  .dark .box { border-color: #3a4245; }
+  .alert { border-left: 1mm solid var(--red); background: #efe3dc; padding: 2.2mm 3mm; margin: 2mm 0; border-radius: 0 1.5mm 1.5mm 0; }
+  .tag { display: inline-block; font-size: 6.8pt; letter-spacing: .1em; text-transform: uppercase; padding: .4mm 1.6mm; border-radius: 3mm; margin-right: 1mm; }
+  .ok { background: #dfe8d6; color: #34502a; } .mid { background: #f1e5c8; color: #6d5310; } .ko { background: #f0d6d3; color: var(--red); }
+  table { width: 100%; border-collapse: collapse; font-size: 8.4pt; }
+  td, th { text-align: left; vertical-align: top; padding: 1.3mm 1mm; border-bottom: .25mm solid var(--sand); }
+  th { font-size: 6.8pt; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: normal; }
+  .big { font-family: "Baskerville", Georgia, serif; font-size: 22pt; color: var(--gold); line-height: 1; }
+  .stat { text-align: center; } .stat span { display: block; font-size: 7.4pt; color: var(--muted); margin-top: 1mm; }
+  .dark .stat span { color: var(--sand); }
+  .q li { list-style: none; margin-left: -4mm; padding-left: 5mm; position: relative; }
+  .q li::before { content: "☐"; position: absolute; left: 0; color: var(--gold); }
+  .quote { font-family: "Baskerville", Georgia, serif; font-style: italic; font-size: 11pt; color: var(--sand); border-left: .4mm solid var(--gold); padding-left: 3mm; margin: 3mm 0; }
+  .tree { font-size: 8.6pt; }
+  .tree div { padding: 1.1mm 0; border-bottom: .25mm dotted var(--sand); }
+  .tree b { color: var(--gold); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<!-- 1 · COUVERTURE + 30 SECONDES -->
+<section class="page dark">
+  <div class="k">Fiche d'immersion · projet site web · oct. 2026</div>
+  <h1>MAISON<br>LEMONY</h1>
+  <p style="color:var(--sand);margin:1.5mm 0 4mm;font-family:Baskerville,Georgia,serif;font-size:11pt">Caves à cigares sur mesure, en cuirs précieux</p>
+  <img src="img/hero.jpg" style="height:62mm">
+  <h3 style="margin-top:5mm">L'essentiel en 30 secondes</h3>
+  <ul>
+    <li><b>Qui :</b> Samuel « Sam » Basmadjian, maroquinier à Vienne (Isère), <b>ex-responsable de fabrication chez Hermès</b>, 3ᵉ génération de tanneurs, <b>Maître Artisan d'Art</b> depuis avril 2026.</li>
+    <li><b>Quoi :</b> des caves à cigares (humidors) gainées d'alligator, python, lézard, autruche ou veau, avec 5 essences de bois + carbone. Tout est personnalisable.</li>
+    <li><b>Associé :</b> Laurent Schimel (« advisory »), regard luxe et commercial.</li>
+    <li><b>Ce qu'on a :</b> brochure FR/EN déjà écrite, ~190 images (dont beaucoup retouchées ou générées par IA), 3 articles de presse, 2 partenariats, 1 vidéo.</li>
+    <li><b>Ce qui manque surtout :</b> du <b>vrai</b> : Sam, l'atelier, les mains, l'intérieur des caves, des prix, des clients.</li>
+  </ul>
+  <div class="num">01</div>
+</section>
+
+<!-- 2 · L'HISTOIRE -->
+<section class="page">
+  <div class="k">01 — L'histoire à raconter</div>
+  <h2>Un homme d'Hermès qui habille le cigare</h2>
+  <p>Le récit est déjà très fort, et c'est l'atout n°1 du site. Le luxe se vend par la <b>légitimité</b>, et ici elle est réelle et vérifiable.</p>
+  <div class="grid2" style="margin:3mm 0">
+    <div class="box stat"><div class="big">3</div><span>générations de tanneurs (père contremaître à Pont-Évêque)</span></div>
+    <div class="box stat"><div class="big">187ᵉ</div><span>Maître Artisan d'Art sur 37 000 artisans en Isère</span></div>
+    <div class="box stat"><div class="big">2017</div><span>création de la maison à Vienne</span></div>
+    <div class="box stat"><div class="big">100 % main</div><span>fabriqué en France, point sellier</span></div>
+  </div>
+  <h3>Les preuves (« social proof »)</h3>
+  <ul>
+    <li><b>Hermès</b> : responsable de fabrication (petite maroquinerie, sacs, bagagerie).</li>
+    <li><b>Haute horlogerie suisse</b> : bracelets et bijouterie de montres en titane.</li>
+    <li><b>La Pyramide</b> (Vienne, 2 étoiles Michelin) : client.</li>
+    <li><b>Cigar and Spice, Genève</b> : cave en autruche orange livrée au Lausanne Palace, et c'est eux qui « certifient » les données techniques.</li>
+    <li><b>Jazz à Vienne 2023</b> : partenaire officiel, série limitée (porte-clés, portefeuilles).</li>
+    <li><b>Presse :</b> Le Dauphiné Libéré, L'Essor, magazine de la CMA (oct. 2026).</li>
+  </ul>
+  <h3>Angles narratifs exploitables</h3>
+  <ul>
+    <li>Upcycling : les peaux sont des sous-produits de l'alimentation (il a aussi travaillé la peau de poisson de la Dombes). <i>À manier avec prudence face à cette cible.</i></li>
+    <li>Projet d'<b>atelier-boutique</b> en centre-ville de Vienne, avec des ateliers de création ouverts au public.</li>
+  </ul>
+  <p class="quote" style="color:var(--muted)">« Le cuir, une matière qui a une histoire et une odeur. »</p>
+  <div class="num">02</div>
+</section>
+
+<!-- 3 · LE PRODUIT -->
+<section class="page">
+  <div class="k">02 — L'offre</div>
+  <h2>4 collections, 1 cave, des milliers de combinaisons</h2>
+  <table>
+    <tr><th>Collection</th><th>Cuirs</th><th>Coloris photo</th></tr>
+    <tr><td><b>Héritage</b></td><td>Veau, bovin, agneau, chèvre</td><td>~10</td></tr>
+    <tr><td><b>Élégance</b></td><td>Lézard / autruche</td><td>9 + 9</td></tr>
+    <tr><td><b>Excellence</b></td><td>Python</td><td>9</td></tr>
+    <tr><td><b>Prestige</b></td><td>Alligator, porosus, niloticus</td><td>~22, plus des éditions : Black, Carbone, Polar White, Shadow Blue…</td></tr>
+  </table>
+  <img src="img/strip_python.jpg" style="height:21mm;margin:2.5mm 0 1.5mm">
+  <img src="img/strip_alligator.jpg" style="height:21mm;margin-bottom:2.5mm">
+  <h3>Fiche technique (brochure)</h3>
+  <div class="grid2">
+    <div class="box"><b>100 cigares</b><br>Ext. 375 × 245 × 119 mm<br>Int. 330 × 220 × 101 mm</div>
+    <div class="box"><b>150 cigares</b><br>Ext. 405 × 285 × 128 mm<br>Int. 360 × 240 × 109 mm</div>
+  </div>
+  <ul>
+    <li><b>Bois :</b> sipo (intérieur), noyer américain, tulipier noir, bambou caramel, érable sycomore, <b>carbone</b> (finition spéciale).</li>
+    <li><b>Métal :</b> charnières, serrure, 2 clés acier, en doré poli, argent poli ou noir PVD.</li>
+    <li><b>Instruments maison :</b> hygromètre LEM-01 (55 mm, ±5 %) + humidificateur ACPL-01, signés du logo.</li>
+    <li>Plateau amovible, séparateurs mobiles, assise velours noir, gravure et marquage perso.</li>
+  </ul>
+  <p style="font-size:8.4pt;color:var(--muted)">Autres objets vus dans les fichiers : flasques gainées, étuis à cigares (« road case », « spirit tank »), plateau-vide-poche, petite maroquinerie.</p>
+  <div class="num">03</div>
+</section>
+
+<!-- 4 · INVENTAIRE ASSETS -->
+<section class="page">
+  <div class="k">03 — Ce qu'on a dans le WeTransfer</div>
+  <h2>Inventaire des assets</h2>
+  <table>
+    <tr><th>Asset</th><th>Qté</th><th>Verdict</th></tr>
+    <tr><td>Packshots caves par couleur (fond béton gris, même cadrage)</td><td>~90</td><td><span class="tag ok">Top</span> cohérents, parfaits pour un sélecteur de couleur</td></tr>
+    <tr><td>« SELECTION FINALE SITE » (choix de Sam)</td><td>58</td><td><span class="tag mid">Moyen</span> 1/3 trop petits (≈900 px)</td></tr>
+    <tr><td>Visuels générés par IA (Gemini, Photoroom)</td><td>30+</td><td><span class="tag ko">Risque</span> voir ci-dessous</td></tr>
+    <tr><td>Brochure FR + EN (8 pages)</td><td>2</td><td><span class="tag ok">Top</span> textes quasi prêts, ton juste</td></tr>
+    <tr><td>Présentation « Lemony » (A4, 5 p.)</td><td>1</td><td><span class="tag ok">Top</span> base de la page « Maison »</td></tr>
+    <tr><td>Logo (calligramme + LEMONY)</td><td>mockups</td><td><span class="tag ko">Manque</span> pas de fichier vectoriel</td></tr>
+    <tr><td>Presse (3 PDF + magazine)</td><td>4</td><td><span class="tag ok">Bon</span></td></tr>
+    <tr><td>Partenariats (Cigar&amp;Spice, Jazz)</td><td>20</td><td><span class="tag ok">Bon</span> photos réelles</td></tr>
+    <tr><td>Vidéo Jazz à Vienne (1080p, 1 min)</td><td>1</td><td><span class="tag mid">Moyen</span> diaporama, pas un film produit</td></tr>
+    <tr><td>Ambiances (cigare + cognac)</td><td>2</td><td><span class="tag mid">Stock</span> génériques</td></tr>
+  </table>
+  <div class="alert"><b>⚠ Point sensible : l'IA.</b> Une bonne partie des packshots et toutes les mises en scène « bureau / salon club » sont générées. Pour une cible qui achète une pièce à plusieurs dizaines de milliers d'euros, un rendu IA repéré, c'est la crédibilité qui tombe. À valider : quels coloris existent <b>vraiment</b> ?</div>
+  <div class="grid2" style="margin-top:2mm">
+    <img src="img/ambiance.jpg" style="height:27mm">
+    <img src="img/open.jpg" style="height:27mm">
+  </div>
+  <p style="font-size:7.6pt;color:var(--muted);margin-top:1mm">À gauche, une mise en scène IA. À droite, une cave ouverte avec deux cadrans : elle n'apparaît qu'en 3 variantes.</p>
+  <div class="num">04</div>
+</section>
+
+<!-- 5 · CE QUI MANQUE -->
+<section class="page">
+  <div class="k">04 — Les trous dans la raquette</div>
+  <h2>Ce qui manque pour un site luxe</h2>
+  <h3>Priorité 1 : indispensable</h3>
+  <ul>
+    <li><b>Portrait de Sam</b> (aucune photo de lui dans les fichiers, hormis le post Instagram).</li>
+    <li><b>Atelier + mains + gestes</b> : coupe, parage, point sellier, pose du gainage. C'est ce qui vend l'artisanat.</li>
+    <li><b>Un vrai film</b> de 30 à 60 s pour le hero (macro cuir, lumière rasante, clé qui tourne, couvercle qui s'ouvre).</li>
+    <li><b>Intérieur des caves</b> : plateau, séparateurs, hygromètre, velours, gravure.</li>
+    <li><b>Logo en vectoriel</b> (SVG/AI) et typographies de la brochure.</li>
+    <li><b>Politique de prix</b> : prix affichés, « à partir de » ou sur demande ?</li>
+  </ul>
+  <h3>Priorité 2 : important</h3>
+  <ul>
+    <li>Macros matières (grain alligator, écailles python, bois), échantillons physiques.</li>
+    <li>Témoignages clients (Cigar and Spice, La Pyramide…) avec autorisation.</li>
+    <li>Délais de fabrication, garantie, entretien, livraison et export.</li>
+    <li><b>CITES / légal</b> : les cuirs exotiques demandent des certificats pour l'export (Suisse, yachts, États-Unis). C'est à expliquer, et c'est rassurant pour le client.</li>
+    <li>Version EN (brochure EN existante) ; d'autres langues ?</li>
+  </ul>
+  <h3>Priorité 3 : bonus</h3>
+  <ul>
+    <li>Contenus spécifiques par cible : golf, yacht, cadeau d'affaires.</li>
+    <li>Packaging et unboxing (le coffret noir siglé existe en photo).</li>
+    <li>Accès au site actuel <b>lemony-design.com</b>, au nom de domaine, à l'Instagram.</li>
+  </ul>
+  <div class="num">05</div>
+</section>
+
+<!-- 6 · STRATÉGIE -->
+<section class="page dark">
+  <div class="k">05 — Première piste stratégique</div>
+  <h2>Pas une boutique : un salon privé</h2>
+  <p>À ce prix-là, personne n'ajoute une cave au panier. Le site doit <b>faire désirer, rassurer, puis déclencher un rendez-vous</b> : échange avec Sam, visio, visite d'atelier ou présentation sur site.</p>
+  <p class="quote">Positionnement possible : « La haute maroquinerie française, au service du cigare. »</p>
+  <h3>Cibles → ce qu'elles cherchent</h3>
+  <table style="color:#e9e4da">
+    <tr><td><b>Amateur fortuné</b></td><td>Pièce unique, signature, histoire à raconter</td></tr>
+    <tr><td><b>Golf / clubs</b></td><td>Pièce de clubhouse, cadeaux de tournoi, éditions aux couleurs du club</td></tr>
+    <tr><td><b>Yachting</b></td><td>Sur-mesure à bord, résistance à l'humidité, accord avec l'intérieur du bateau</td></tr>
+    <tr><td><b>Cadres / cadeaux d'affaires</b></td><td>Gravure, délais fiables, devis rapide</td></tr>
+    <tr><td><b>B2B (palaces, lounges, cavistes)</b></td><td>Co-branding façon Cigar and Spice, revente</td></tr>
+  </table>
+  <h3>3 idées d'expérience</h3>
+  <ul>
+    <li><b>L'Atelier de composition</b> : un configurateur (taille → cuir → coloris → bois → métal → gravure). Les packshots au même cadrage permettent de changer de couleur en direct. On termine par une demande de devis avec récap PDF.</li>
+    <li><b>La lenteur comme luxe</b> : fond sombre, typo serif, grands macros cuir, scroll lent, peu de texte, son optionnel (craquement du cuir, clé).</li>
+    <li><b>Pièces numérotées</b> : chaque cave a son numéro et une page « certificat » (cuir, origine, date, artisan).</li>
+  </ul>
+  <div class="num">06</div>
+</section>
+
+<!-- 7 · ARBORESCENCE -->
+<section class="page">
+  <div class="k">06 — Arborescence de départ</div>
+  <h2>Un site court et dense</h2>
+  <div class="tree">
+    <div><b>Accueil</b> : film hero, signature, 4 collections, preuve (Hermès / Maître Artisan), CTA rendez-vous</div>
+    <div><b>La Maison</b> : Sam, héritage tannerie, Hermès, Vienne, titre de MAA</div>
+    <div><b>Collections</b> : Héritage · Élégance · Excellence · Prestige, puis Éditions (Black, Carbone, Polar White…)</div>
+    <div><b>Savoir-faire</b> : cuirs, essences, instruments LEM-01 / ACPL-01, gestes</div>
+    <div><b>Sur-mesure</b> : configurateur et process (échange, croquis, fabrication, livraison)</div>
+    <div><b>Accessoires</b> : étuis, flasques, plateaux <i>(à confirmer)</i></div>
+    <div><b>Collaborations &amp; presse</b> : Cigar and Spice, Jazz à Vienne, La Pyramide, articles</div>
+    <div><b>Professionnels</b> : golf, yachting, hôtellerie, cadeaux d'affaires</div>
+    <div><b>Rendez-vous privé</b> : formulaire qualifié (projet, budget, délai), téléphone direct</div>
+  </div>
+  <h3>Ton et identité (déjà posés par la brochure)</h3>
+  <ul>
+    <li>Palette : <b>noir bleuté</b> (#14191B), <b>sable</b> (#C9BFAE), accents <b>or</b> et cognac.</li>
+    <li>Typo : serif classique (Garamond / Baskerville) en capitales espacées.</li>
+    <li>Écriture courte et rythmée : « La structure existe pour servir la matière. Le bois soutient. Le cuir révèle. »</li>
+  </ul>
+  <div class="grid2" style="margin-top:2.5mm">
+    <img src="img/plaque.jpg" style="height:24mm">
+    <img src="img/cas.jpg" style="height:24mm">
+  </div>
+  <div class="num">07</div>
+</section>
+
+<!-- 8 · QUESTIONS -->
+<section class="page">
+  <div class="k">07 — À demander à Sam</div>
+  <h2>Questions pour le prochain call</h2>
+  <ul class="q">
+    <li><b>Nom :</b> « Maison Lemony », « Lemony » ou « Lemony Design » ? Que devient le domaine lemony-design.com ?</li>
+    <li><b>Périmètre :</b> uniquement les caves, ou toute la maroquinerie (sacs, bracelets, Jazz…) ?</li>
+    <li>Quel rôle pour <b>Laurent Schimel</b> ? Qui valide ?</li>
+    <li><b>Prix</b> d'entrée par collection ? Affichés ou non ?</li>
+    <li>Quels modèles <b>existent physiquement</b>, lesquels sont des rendus IA ?</li>
+    <li>Tailles : seulement 100 et 150, ou aussi 200 / 300+ comme dans la presse ?</li>
+    <li>Délais de fabrication ? Capacité par mois ?</li>
+    <li>Galuchat, crocodile porosus, niloticus : disponibles ? Photos ?</li>
+    <li>Peut-on organiser un <b>shooting + tournage</b> à l'atelier ?</li>
+    <li>Peut-on citer Hermès, La Pyramide, Cigar and Spice, les horlogers ?</li>
+    <li>Vente : rendez-vous seulement, ou paiement en ligne pour les accessoires ?</li>
+    <li>Marchés visés : France, Suisse, Monaco, Moyen-Orient, US ? → langues + CITES.</li>
+    <li>Réseaux existants (golf, yacht clubs) ? Instagram actif ?</li>
+    <li>Budget, date de lancement visée, qui maintiendra le site ?</li>
+  </ul>
+  <div class="num">08</div>
+</section>
+
+<!-- 9 · NEXT -->
+<section class="page dark">
+  <div class="k">08 — Prochaines étapes</div>
+  <h2>Comment avancer</h2>
+  <ol style="margin-left:4.5mm">
+    <li style="margin-bottom:2.5mm"><b>Call de cadrage</b> avec Sam (et Laurent) à partir des questions de la p. 08.</li>
+    <li style="margin-bottom:2.5mm"><b>Tri des assets</b> : vrais produits / IA / à refaire, puis une banque d'images propre et nommée.</li>
+    <li style="margin-bottom:2.5mm"><b>Moodboard + plateforme de marque</b> : promesse, ton, palette, typo.</li>
+    <li style="margin-bottom:2.5mm"><b>Brief shooting et film</b> : atelier, gestes, macros, intérieur des caves, portrait.</li>
+    <li style="margin-bottom:2.5mm"><b>Wireframes</b> : accueil, collection, configurateur, rendez-vous.</li>
+    <li style="margin-bottom:2.5mm"><b>Maquettes, dev, contenus FR/EN</b>, puis lancement.</li>
+  </ol>
+  <div class="box" style="margin-top:4mm">
+    <b style="color:var(--sand)">À retenir</b><br>
+    Le fond est déjà là : histoire forte, textes écrits, gamme claire. Le chantier, c'est l'<b>image</b>. Il faut remplacer le « trop parfait » de l'IA par le vrai geste, et faire du site une invitation plutôt qu'un catalogue.
+  </div>
+  <img src="img/passion.jpg" style="height:46mm;margin-top:3mm;object-position:50% 80%">
+  <p class="quote" style="margin-top:3mm">« J'ai les goûts les plus simples du monde, je me contente du meilleur. » — Oscar Wilde, citation de la brochure</p>
+  <div class="num">09</div>
+</section>
+
+</body>
+</html>

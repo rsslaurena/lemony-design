@@ -1,0 +1,26 @@
+/* Maison Lemony — design tokens v1.0 (généré depuis brand.json) */
+:root {
+  /* Palette */
+  --papier: #F3EEE4; /* Fond principal du site et des documents. La lumière du jour sur l'établi. */
+  --encre: #1E1A16; /* Titres, texte courant, logo, bouton principal. Fond des pages « nuit » (pied de page, vidéo). */
+  --kraft: #E5DCCB; /* Surface : alternance de sections, cartes matière, champs de formulaire. */
+  --filet: #CFC4AE; /* Séparateurs, bordures de cartes, grilles. Jamais pour du texte. */
+  --mine: #625849; /* Texte secondaire, légendes, cotes techniques. Assombri depuis #6B6156 pour passer AA sur kraft. */
+  --cognac: #8F5530; /* Accent unique : traits de cote, annotations, numéro de pièce, survol. Jamais en fond de section. */
+  /* Rôles */
+  --bg: var(--papier);
+  --surface: var(--kraft);
+  --border: var(--filet);
+  --text: var(--encre);
+  --heading: var(--encre);
+  --muted: var(--mine);
+  --accent: var(--cognac);
+  --inverse-bg: var(--encre);
+  --inverse-text: var(--papier);
+  --success: #1A9D4D;
+  --danger: #D83A34;
+  /* Typographie */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-text: 'Cormorant Garamond', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}

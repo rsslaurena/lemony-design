@@ -1,0 +1,68 @@
+/* Boska */
+@font-face {
+  font-family: 'Boska';
+  src: url('fonts/989285dc1e.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boska';
+  src: url('fonts/ed4347bc8a.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Boska';
+  src: url('fonts/0d40317513.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boska';
+  src: url('fonts/fa0cb5d6e5.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Boska';
+  src: url('fonts/e53261916a.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Switzer */
+@font-face {
+  font-family: 'Switzer';
+  src: url('fonts/03e786a481.woff2') format('woff2');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Switzer';
+  src: url('fonts/f3531afcef.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Switzer';
+  src: url('fonts/adae905e55.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Switzer';
+  src: url('fonts/8d5493d0b8.woff2') format('woff2');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+

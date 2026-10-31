@@ -1,0 +1,6 @@
+<html><head><style id="s"></style></head><body><p style="font-family:Boska">Boska test</p><div id="o"></div>
+<script>
+fetch('fontshare.css').then(r=>r.text()).then(t=>{document.getElementById('o').textContent='CSSLEN '+t.length})
+.catch(e=>document.getElementById('o').textContent='ERR '+e);
+const f=new FontFace('BoskaT', 'url(fonts/989285dc1e.woff2)'); f.load().then(()=>document.body.append(' LOADED'),e=>document.body.append(' FAIL '+e));
+</script></body></html>

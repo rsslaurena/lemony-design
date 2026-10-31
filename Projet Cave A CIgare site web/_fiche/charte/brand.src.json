@@ -1,0 +1,686 @@
+{
+  "meta": {
+    "name": "Maison Lemony",
+    "version": "1.0",
+    "date": "Octobre 2026",
+    "lang": "fr",
+    "usage": "identité visuelle, site web, brochure, plaques et gravures, Instagram",
+    "cover_title": "Charte<br>graphique <em>Maison Lemony</em>",
+    "cover_eyebrow": "Direction A · L'Établi",
+    "cover_note": "Maison Lemony · Samuel Basmadjian, Maître artisan d'art · Vienne<br>« Fait de mes mains. » (signature à confirmer)"
+  },
+  "fonts": {
+    "import_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap",
+    "display": {
+      "family": "Cormorant Garamond",
+      "fallback": "Georgia, serif",
+      "weights": [
+        400,
+        500,
+        600
+      ]
+    },
+    "text": {
+      "family": "Cormorant Garamond",
+      "fallback": "Georgia, serif",
+      "weights": [
+        400,
+        500,
+        600
+      ]
+    },
+    "mono": {
+      "family": "IBM Plex Mono",
+      "fallback": "ui-monospace, monospace",
+      "weights": [
+        400,
+        500
+      ]
+    }
+  },
+  "colors": [
+    {
+      "token": "papier",
+      "hex": "#F3EEE4",
+      "name": "Papier",
+      "usage": "Fond principal du site et des documents. La lumière du jour sur l'établi."
+    },
+    {
+      "token": "encre",
+      "hex": "#1E1A16",
+      "name": "Encre",
+      "usage": "Titres, texte courant, logo, bouton principal. Fond des pages « nuit » (pied de page, vidéo)."
+    },
+    {
+      "token": "kraft",
+      "hex": "#E5DCCB",
+      "name": "Kraft",
+      "usage": "Surface : alternance de sections, cartes matière, champs de formulaire."
+    },
+    {
+      "token": "filet",
+      "hex": "#CFC4AE",
+      "name": "Filet",
+      "usage": "Séparateurs, bordures de cartes, grilles. Jamais pour du texte."
+    },
+    {
+      "token": "mine",
+      "hex": "#625849",
+      "name": "Mine de plomb",
+      "usage": "Texte secondaire, légendes, cotes techniques. Assombri depuis #6B6156 pour passer AA sur kraft."
+    },
+    {
+      "token": "cognac",
+      "hex": "#8F5530",
+      "name": "Cognac",
+      "usage": "Accent unique : traits de cote, annotations, numéro de pièce, survol. Jamais en fond de section."
+    }
+  ],
+  "roles": {
+    "bg": "papier",
+    "surface": "kraft",
+    "border": "filet",
+    "text": "encre",
+    "heading": "encre",
+    "muted": "mine",
+    "accent": "cognac",
+    "inverse_bg": "encre",
+    "inverse_text": "papier"
+  },
+  "logo": {
+    "svg": "<svg viewBox=\"0 0 400 120\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Maison Lemony\"><svg x=\"0\" y=\"10\" width=\"54\" height=\"100\" viewBox=\"{{MONO_VB}}\">{{MONO_PATH}}</svg><text x=\"80\" y=\"74\" fill=\"currentColor\" font-family=\"Cormorant Garamond, Georgia, serif\" font-weight=\"500\" font-size=\"50\" letter-spacing=\"16\">LEMONY</text><text x=\"82\" y=\"106\" fill=\"currentColor\" font-family=\"IBM Plex Mono, monospace\" font-weight=\"400\" font-size=\"14\" letter-spacing=\"6\">MAISON · VIENNE</text></svg>",
+    "mark_svg": "<svg viewBox=\"0 10 54 100\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" aria-label=\"Monogramme Lemony\"><svg x=\"0\" y=\"10\" width=\"54\" height=\"100\" viewBox=\"{{MONO_VB}}\">{{MONO_PATH}}</svg></svg>"
+  },
+  "css": ".btn{font-family:var(--font-mono);font-weight:500;font-size:11px;line-height:1;letter-spacing:.18em;text-transform:uppercase;padding:15px 24px;display:inline-block;border:1px solid transparent;} .btn-primary{background:var(--encre);color:var(--papier);} .btn-primary.is-hover{background:var(--cognac);} .btn-secondary{background:transparent;color:var(--encre);border-color:var(--encre);} .btn-ghost{background:transparent;color:var(--encre);padding:15px 0 6px;border-bottom:1px solid var(--cognac);} .cote{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--mine);} .cote-line{display:flex;align-items:center;gap:10px;font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--cognac);} .cote-line i{flex:1;height:1px;background:var(--cognac);position:relative;} .cote-line i:before,.cote-line i:after{content:'';position:absolute;top:-4px;width:1px;height:9px;background:var(--cognac);} .cote-line i:before{left:0;} .cote-line i:after{right:0;} .piece{border:1px solid var(--encre);padding:18px 20px;background:var(--papier);} .piece .n{font-family:var(--font-mono);font-size:10px;letter-spacing:.22em;color:var(--cognac);} .piece h4{font-family:var(--font-display);font-weight:500;font-size:26px;line-height:1.05;margin:8px 0 6px;color:var(--encre);} .voix{font-family:var(--font-display);font-style:italic;font-weight:400;font-size:24px;line-height:1.25;color:var(--encre);} .voix .sig{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-style:normal;font-size:10px;letter-spacing:.2em;color:var(--mine);margin-top:12px;} .voix .sig svg{height:22px;width:auto;color:var(--cognac);} .field-l{font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--mine);display:block;} .field{display:block;border-bottom:1px solid var(--encre);font-family:var(--font-display);font-size:19px;color:var(--encre);padding:6px 0 8px;} .field.ph{color:var(--mine);} .ph-cap{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--mine);margin-top:8px;} .ph-img{display:block;width:100%;height:150px;object-fit:cover;} .stat-num{font-family:var(--font-display);font-weight:500;font-size:52px;line-height:1;color:var(--encre);} .stat-num em{font-style:normal;color:var(--cognac);} .stat-cap{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mine);margin-top:10px;}",
+  "sections": [
+    {
+      "type": "identity",
+      "title": "Identité & positionnement",
+      "short": "Identité",
+      "eyebrow": "Identité &amp; positionnement",
+      "heading": "Sam est <em>la marque</em>",
+      "lead": "À l'heure des objets jetables, une pièce faite par un homme, pour une vie. Le visiteur n'entre pas dans une boutique : il entre dans l'atelier d'un artisan qui travaille de ses mains, comme son père tanneur avant lui.",
+      "cards": [
+        {
+          "label": "Nom",
+          "title": "Maison Lemony",
+          "text": "Caves à cigares sur mesure en cuirs précieux. Samuel Basmadjian, Maître artisan d'art, Vienne (Isère), troisième génération de tanneurs."
+        },
+        {
+          "label": "Promesse",
+          "text": "Une pièce numérotée, façonnée à la main en 8 à 10 semaines. Une dizaine de pièces par mois au plus. Prix sur demande, après une conversation."
+        },
+        {
+          "label": "L'idée de la direction",
+          "text": "<b>L'Établi.</b> La marque comme un carnet d'atelier : la lumière du jour, le papier, la cote au crayon, l'outil posé. Le vrai, jamais le rendu."
+        }
+      ],
+      "voice": {
+        "summary": "Le ton de Sam : précis, sensuel, sobre. Les mots du métier plutôt que ceux du marketing. Des phrases courtes. Ses vraies paroles, jamais inventées.",
+        "do": [
+          "« Le cuir, une matière qui a une histoire et une odeur. »",
+          "« Parer, griffer, coudre au point sellier. »",
+          "« Huit à dix semaines entre les mains de Sam. »"
+        ],
+        "dont": [
+          "« Un écrin d'exception au prestige absolu et incomparable. »",
+          "Empiler les superlatifs : exception, noble, absolu, prestigieux.",
+          "Afficher un prix, ou citer Hermès."
+        ]
+      }
+    },
+    {
+      "type": "logo",
+      "title": "Logo",
+      "concept": {
+        "eyebrow": "Logo · la signature",
+        "heading": "Un monogramme <em>d'un seul geste</em>",
+        "lead": "Le L calligraphié de Sam, tracé d'un seul geste de plume, signe chaque pièce. Il se tient seul, sans cadre, à côté de LEMONY en capitales espacées."
+      },
+      "construction": [
+        "Monogramme = hauteur <b>100</b> unités (≈ 1,5 × la hauteur de LEMONY), aligné en haut sur la pointe du L.",
+        "« LEMONY » = <b>Cormorant Garamond 500</b>, corps 50, <b>0,32em</b>. « MAISON · VIENNE » = <b>Plex Mono 400</b>, corps 14, <b>0,43em</b>.",
+        "Écart monogramme / texte = <b>26</b>. Taille minimale : 120 px à l'écran, 30 mm imprimé."
+      ],
+      "variants": [
+        {
+          "bg": "papier",
+          "label": "Principal · Encre sur Papier #F3EEE4"
+        },
+        {
+          "bg": "encre",
+          "label": "Inversé · Papier sur Encre #1E1A16"
+        },
+        {
+          "bg": "kraft",
+          "label": "Sur surface · Kraft #E5DCCB"
+        }
+      ],
+      "mark_note": "Monogramme seul : favicon, avatar Instagram, gravure sur la plaque, marquage à chaud dans le cuir, cachet de cire. Partout ailleurs, il est accompagné de LEMONY.",
+      "clearspace": "Espace minimum autour du logo = hauteur du monogramme (100 unités) divisée par deux, sur tous les côtés.",
+      "misuse": [
+        {
+          "bg": "cognac"
+        },
+        {
+          "transform": "rotate(-10deg)"
+        },
+        {
+          "transform": "scaleX(1.6)"
+        }
+      ],
+      "rules_dont": [
+        "Jamais en cognac, jamais sur fond cognac ou sur une photo chargée : encre ou papier uniquement. Seule exception : le monogramme seul, en cognac, comme signature sous une citation de Sam. Dorure et gravure : voir les déclinaisons.",
+        "Jamais pivoté, étiré, ni le monogramme enfermé dans un cadre, un cercle ou un ovale."
+      ]
+    },
+    {
+      "type": "colors",
+      "title": "Couleurs",
+      "eyebrow": "Palette · l'établi",
+      "heading": "Le papier, l'encre, <em>le cognac</em>",
+      "accent_rule": {
+        "eyebrow": "Règle du cognac",
+        "heading": "Le cognac <em>annote</em>,<br>il ne décore pas",
+        "lead": "Comme le crayon de Sam sur un patron, le cognac ne sert qu'à tracer, coter et numéroter. Le reste vit en encre sur papier.",
+        "correct": [
+          "<div class=\"cote-line\">330 mm<i></i></div>",
+          "<p class=\"piece\" style=\"border:none;padding:0;background:none\"><span class=\"n\">PIÈCE N° 007</span></p>",
+          "<span class=\"btn btn-ghost\">Voir l'atelier →</span>"
+        ],
+        "incorrect": [
+          "<p class=\"body\" style=\"color:var(--papier);background:var(--cognac);margin:-26px;padding:26px;\">Fond de section en cognac plein.</p>",
+          "<p class=\"h3\" style=\"color:var(--cognac)\">Grand titre en cognac</p>",
+          "<p class=\"body\" style=\"color:var(--cognac)\">Paragraphe entier en cognac.</p>"
+        ]
+      }
+    },
+    {
+      "type": "typography",
+      "title": "Typographie",
+      "families": [
+        {
+          "font": "display",
+          "eyebrow": "Titres et texte · Cormorant Garamond",
+          "heading": "Un Garamond <em>doux</em>, pour la voix",
+          "styles": [
+            {
+              "name": "Display XL",
+              "size": "84px",
+              "weight": 500,
+              "tracking": "-0.01em",
+              "leading": 1,
+              "sample": "Le geste",
+              "sample_size": "62px"
+            },
+            {
+              "name": "Display L",
+              "size": "48px",
+              "weight": 500,
+              "leading": 1.05,
+              "sample": "Le carnet d'atelier"
+            },
+            {
+              "name": "Titre M",
+              "size": "30px",
+              "weight": 500,
+              "leading": 1.1,
+              "sample": "Parer, griffer, coudre au point sellier."
+            },
+            {
+              "name": "Lead",
+              "size": "22px",
+              "weight": 400,
+              "leading": 1.4,
+              "sample": "Huit à dix semaines entre les mains de Sam, de la découpe à la dernière couture."
+            },
+            {
+              "name": "Body",
+              "size": "19px",
+              "weight": 500,
+              "leading": 1.55,
+              "sample": "Le cuir est choisi peau par peau, puis paré, griffé et gainé sur le bois avant d'être cousu à la main."
+            }
+          ]
+        },
+        {
+          "font": "mono",
+          "eyebrow": "Cotes d'atelier · IBM Plex Mono",
+          "heading": "Le mono, <em>l'écriture de l'outil</em>",
+          "styles": [
+            {
+              "name": "Cote",
+              "size": "12px",
+              "weight": 400,
+              "tracking": "0.08em",
+              "uppercase": true,
+              "leading": 1.6,
+              "sample": "Crocodile porosus · 405 × 285 × 128 mm · 150 cigares",
+              "color": "muted"
+            },
+            {
+              "name": "Numéro de pièce",
+              "size": "11px",
+              "weight": 500,
+              "tracking": "0.22em",
+              "uppercase": true,
+              "sample": "Pièce n° 007 · signée S. B.",
+              "color": "accent"
+            },
+            {
+              "name": "Bouton / label",
+              "size": "11px",
+              "weight": 500,
+              "tracking": "0.18em",
+              "uppercase": true,
+              "sample": "Prendre rendez-vous"
+            }
+          ]
+        }
+      ],
+      "rules": [
+        "Corps de texte à 19px minimum en Cormorant Medium 500 : en dessous, le Garamond devient trop fin à l'écran.",
+        "Le mono est réservé à ce qui est technique : dimensions, peaux, numéros, boutons, labels. Jamais pour une phrase.",
+        "L'italique est réservé aux paroles de Sam, toujours de vraies citations.",
+        "Capitales espacées (0,32em) uniquement pour le logo et les très grands titres de rubrique."
+      ]
+    },
+    {
+      "type": "generic",
+      "title": "Composants",
+      "pages": [
+        {
+          "eyebrow": "Actions",
+          "heading": "Trois niveaux, <em>sans prix</em>",
+          "lead": "Aucun bouton n'achète. Tous mènent à une conversation avec Sam.",
+          "blocks": [
+            {
+              "type": "cells",
+              "columns": 3,
+              "items": [
+                {
+                  "label": "Principal",
+                  "demo": "<span class=\"btn btn-primary\">Prendre rendez-vous</span>",
+                  "caption": "Survol : fond cognac.",
+                  "spec": "<b>bg</b> #1E1A16 · <b>color</b> #F3EEE4<br><b>pad</b> 15px 24px · Plex Mono 500 11px · 0,18em"
+                },
+                {
+                  "label": "Secondaire",
+                  "demo": "<span class=\"btn btn-secondary\">Demander un devis</span>",
+                  "caption": "Survol : fond kraft.",
+                  "spec": "<b>border</b> 1px #1E1A16<br><b>pad</b> 15px 24px · Plex Mono 500 11px"
+                },
+                {
+                  "label": "Lien d'atelier",
+                  "demo": "<span class=\"btn btn-ghost\">Voir l'atelier →</span>",
+                  "caption": "Trait cognac dessous, comme une cote.",
+                  "spec": "<b>border-bottom</b> 1px #8F5530<br>Plex Mono 500 11px · 0,18em"
+                }
+              ]
+            },
+            {
+              "type": "label",
+              "text": "État survol (principal)"
+            },
+            {
+              "type": "html",
+              "html": "<div style=\"display:flex;gap:18px;align-items:center;\"><span class=\"btn btn-primary\">Défaut</span><span class=\"btn btn-primary is-hover\">Survol → cognac</span></div>"
+            },
+            {
+              "type": "rules",
+              "label": "Règles",
+              "items": [
+                "Un seul bouton principal par écran : « Prendre rendez-vous ».",
+                "Jamais « Acheter », « Ajouter au panier » ni « Voir le prix »."
+              ]
+            }
+          ]
+        },
+        {
+          "eyebrow": "Rendez-vous",
+          "heading": "Chaque pièce naît <em>d'une conversation</em>",
+          "lead": "Le formulaire remplace la boutique. Il doit ressembler à une lettre adressée à Sam, pas à un tunnel de vente.",
+          "blocks": [
+            {
+              "type": "cells",
+              "label": "Champs",
+              "columns": 2,
+              "items": [
+                {
+                  "demo": "<span class=\"field-l\">Votre nom</span><span class=\"field\">Jean Martin</span>",
+                  "caption": "Filet encre 1px dessous, saisie en Cormorant 19px."
+                },
+                {
+                  "demo": "<span class=\"field-l\">Votre projet</span><span class=\"field ph\">Une cave de 150 cigares en porosus…</span>",
+                  "caption": "Texte d'exemple en mine."
+                }
+              ]
+            },
+            {
+              "type": "rules",
+              "label": "Règles",
+              "items": [
+                "Quatre champs au plus : nom, email ou téléphone, pays, projet.",
+                "Pas de champ « budget » : le prix se discute avec Sam.",
+                "Réponse annoncée : « Sam vous répond sous 48 heures. » (délai à confirmer)."
+              ]
+            }
+          ]
+        },
+        {
+          "eyebrow": "La fiche de pièce",
+          "heading": "Chaque cave est <em>numérotée</em>",
+          "blocks": [
+            {
+              "type": "cells",
+              "columns": 2,
+              "items": [
+                {
+                  "label": "Carte de pièce",
+                  "demo": "<div class=\"piece\"><span class=\"n\">PIÈCE N° 007</span><h4>Cognac porosus</h4><p class=\"cote\">405 × 285 × 128 mm · 150 cigares</p><p class=\"cote\">Intérieur sipo · ferrures dorées</p></div>",
+                  "caption": "Filet encre 1px, padding 18px 20px. Numéro en cognac."
+                },
+                {
+                  "label": "Cote d'atelier",
+                  "surface": true,
+                  "demo": "<div class=\"cote-line\" style=\"margin:18px 0\">375 mm<i></i></div><div class=\"cote-line\">245 mm<i></i></div>",
+                  "caption": "Trait cognac 1px avec ses deux butées : pour toutes les dimensions."
+                }
+              ]
+            },
+            {
+              "type": "cells",
+              "label": "Chiffres de l'atelier",
+              "columns": 3,
+              "items": [
+                {
+                  "demo": "<p class=\"stat-num\">8<em>–</em>10</p><p class=\"stat-cap\">semaines de fabrication</p>"
+                },
+                {
+                  "demo": "<p class=\"stat-num\">12</p><p class=\"stat-cap\">pièces par mois au plus</p>"
+                },
+                {
+                  "demo": "<p class=\"stat-num\">3<em style=\"font-size:26px;vertical-align:top\">e</em></p><p class=\"stat-cap\">génération de tanneurs</p>",
+                  "surface": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "eyebrow": "La voix de Sam",
+          "heading": "L'italique, <em>c'est lui</em>",
+          "lead": "Chaque page porte au moins une phrase de Sam, en italique, signée de son monogramme. C'est la présence de l'artisan sur le site.",
+          "blocks": [
+            {
+              "type": "cells",
+              "columns": 1,
+              "items": [
+                {
+                  "demo": "<p class=\"voix\">« Le cuir, une matière qui a une histoire et une odeur. »<span class=\"sig\">{{MARK_INLINE}} SAMUEL BASMADJIAN · MAÎTRE ARTISAN D'ART</span></p>",
+                  "caption": "Cormorant italique 400, 24px, interligne 1,25. Signature : monogramme cognac 22px + nom en Plex Mono 10px, 0,2em."
+                }
+              ]
+            },
+            {
+              "type": "rules",
+              "label": "Règles",
+              "items": [
+                "Uniquement des phrases réellement prononcées ou écrites par Sam, validées par lui.",
+                "Une citation par écran au plus.",
+                "Jamais d'italique pour autre chose que sa voix."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "generic",
+      "title": "Photographie",
+      "pages": [
+        {
+          "eyebrow": "Direction photo",
+          "heading": "Le vrai, <em>jamais le rendu</em>",
+          "lead": "Zéro image générée par IA. Sam, ses mains, ses outils, de vraies pièces, à la lumière de l'atelier.",
+          "blocks": [
+            {
+              "type": "cells",
+              "columns": 3,
+              "items": [
+                {
+                  "demo": "<img class=\"ph-img\" src=\"../directions/img/couture.jpg\" alt=\"Couture main sur cuir\"><p class=\"ph-cap\">LE DÉTAIL · couture, poinçon, fil</p>"
+                },
+                {
+                  "demo": "<img class=\"ph-img\" src=\"../directions/img/angle.jpg\" alt=\"Angle de cave en cuir\"><p class=\"ph-cap\">LA MATIÈRE · grain, tranche, patine</p>"
+                },
+                {
+                  "demo": "<img class=\"ph-img\" src=\"../directions/img/hygro.jpg\" alt=\"Main posant un hygromètre\"><p class=\"ph-cap\">LA MAIN · le geste en cours</p>"
+                }
+              ]
+            },
+            {
+              "type": "okno",
+              "label": "Règles de prise de vue",
+              "ok": [
+                "Lumière du jour, rasante sur le grain.",
+                "Mains de Sam en action, outils réels.",
+                "Chutes de cuir, établi, traces d'usage."
+              ],
+              "no": [
+                "Rendus IA, salons club fictifs.",
+                "Fonds de studio, reflets froids.",
+                "Cigare fumant sur un verre de cognac."
+              ]
+            }
+          ]
+        },
+        {
+          "eyebrow": "Liste de plans à produire",
+          "heading": "Le shooting <em>d'atelier</em>",
+          "lead": "Une journée de prise de vue à l'atelier de Vienne suffit pour lancer le site. Une vidéo de 30 à 60 secondes pour l'accueil.",
+          "blocks": [
+            {
+              "type": "rules",
+              "label": "Plans indispensables",
+              "items": [
+                "Portrait de Sam à l'établi (plan large et plan serré), tablier, lumière de fenêtre.",
+                "Les mains : découpe de la peau, parage, griffage, couture au point sellier, gainage sur le bois.",
+                "Les outils alignés sur l'établi, vus de dessus.",
+                "Chaque cave fermée puis ouverte (plateau, séparateurs, hygromètre), sur fond papier ou bois brut.",
+                "Macros : grain de chaque peau, tranche teintée, ferrures, gravure du numéro de pièce.",
+                "Vidéo : la clé qui tourne, le couvercle qui s'ouvre, le son du cuir."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "generic",
+      "title": "Déclinaisons & mouvement",
+      "pages": [
+        {
+          "eyebrow": "Supports",
+          "heading": "Du site <em>à la plaque</em>",
+          "blocks": [
+            {
+              "type": "cells",
+              "columns": 3,
+              "items": [
+                {
+                  "title": "Site web",
+                  "title_size": 18,
+                  "text": "Fond papier, texte encre, vraie photo plein cadre. Pied de page en encre. Bilingue FR / EN."
+                },
+                {
+                  "title": "Plaque & gravure",
+                  "title_size": 18,
+                  "surface": true,
+                  "text": "Monogramme seul ou logo complet, gravé ou doré sur laiton. Numéro de pièce en Plex Mono gravé."
+                },
+                {
+                  "title": "Brochure FR / EN",
+                  "title_size": 18,
+                  "text": "Papier non couché ivoire, impression encre + une couleur cognac. Aucun prix imprimé."
+                },
+                {
+                  "title": "Instagram",
+                  "title_size": 18,
+                  "text": "Avatar : monogramme sur papier. Publications : le geste, la matière, une citation de Sam."
+                },
+                {
+                  "title": "Carte & certificat",
+                  "title_size": 18,
+                  "surface": true,
+                  "text": "Certificat de pièce : numéro, peau, essence, dates, signature manuscrite de Sam, CITES joints."
+                },
+                {
+                  "title": "Marquage cuir",
+                  "title_size": 18,
+                  "text": "Monogramme frappé à chaud à l'intérieur du couvercle, sans dorure."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "eyebrow": "Mouvement",
+          "heading": "Le temps <em>de l'atelier</em>",
+          "lead": "Le site respire lentement, comme on travaille une peau. Le mouvement accompagne la lecture, il ne cache jamais le contenu.",
+          "blocks": [
+            {
+              "type": "cells",
+              "columns": 3,
+              "items": [
+                {
+                  "title": "Apparition",
+                  "title_size": 18,
+                  "text": "Fondu + montée de 12px, 0,9s, ease-out. Le texte est lisible même si le script ne charge pas."
+                },
+                {
+                  "title": "Cotes",
+                  "title_size": 18,
+                  "surface": true,
+                  "text": "Les traits de cote se dessinent de gauche à droite au scroll (0,8s), puis le chiffre apparaît."
+                },
+                {
+                  "title": "Photo",
+                  "title_size": 18,
+                  "text": "Léger zoom avant (1 → 1,04) sur 6s pour les grands plans d'atelier. Jamais de carrousel automatique."
+                }
+              ]
+            },
+            {
+              "type": "rules",
+              "label": "Règles",
+              "items": [
+                "Durées entre 0,6 et 1,2s : jamais de rebond ni d'effet élastique.",
+                "Toujours respecter <em>prefers-reduced-motion</em> : tout s'affiche sans animation.",
+                "Aucun contenu masqué en attente d'une animation (défaut majeur du site actuel)."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "accessibility",
+      "title": "Accessibilité",
+      "heading": "Des contrastes <em>mesurés</em>",
+      "lead": "Ratios WCAG 2.1 calculés sur les paires réellement utilisées. AA = 4,5:1 pour le texte courant, 3:1 pour les titres.",
+      "pairs": [
+        {
+          "fg": "papier",
+          "bg": "cognac",
+          "usage": "Bouton principal au survol",
+          "min": 4.5
+        }
+      ],
+      "notes": [
+        "Le cognac ne porte jamais seul une information : une cote a toujours son chiffre, un lien a toujours son libellé.",
+        "Corps de texte à 19px minimum : le Cormorant est fin, il perd en lisibilité en dessous.",
+        "Focus clavier visible : contour 2px cognac, décalé de 3px."
+      ]
+    },
+    {
+      "type": "dodont",
+      "title": "Do / Don't",
+      "eyebrow": "Do / Don't",
+      "heading": "Les <em>bons réflexes</em>",
+      "do": [
+        {
+          "visual": {
+            "logo": {
+              "bg": "papier"
+            }
+          },
+          "desc": "Logo encre sur papier, ou papier sur encre."
+        },
+        {
+          "visual": {
+            "html": "<div class=\"cote-line\" style=\"width:180px\">405 mm<i></i></div>"
+          },
+          "desc": "Cognac réservé aux cotes, numéros et annotations."
+        },
+        {
+          "visual": {
+            "html": "<p class=\"voix\" style=\"font-size:18px\">« Mon père était tanneur. »</p>"
+          },
+          "desc": "L'italique pour une vraie phrase de Sam."
+        }
+      ],
+      "dont": [
+        {
+          "visual": {
+            "logo": {
+              "bg": "cognac"
+            }
+          },
+          "desc": "Jamais le logo sur fond cognac."
+        },
+        {
+          "visual": {
+            "logo": {
+              "transform": "scaleX(1.6)"
+            }
+          },
+          "desc": "Jamais déformé, étiré ou pivoté."
+        },
+        {
+          "visual": {
+            "html": "<p class=\"cote\" style=\"font-size:14px;color:var(--encre)\">À PARTIR DE 9 800 €</p>"
+          },
+          "desc": "Jamais de prix affiché : tout passe par un rendez-vous."
+        }
+      ]
+    },
+    {
+      "type": "contact",
+      "title": "Contact & ressources",
+      "heading": "L'atelier<br><em>vous reçoit.</em>",
+      "rows": [
+        {
+          "k": "Atelier",
+          "v": "Vienne (38200), sur rendez-vous"
+        },
+        {
+          "k": "Email",
+          "v": "sam@lemony-design.com",
+          "href": "mailto:sam@lemony-design.com"
+        },
+        {
+          "k": "Téléphone",
+          "v": "+33 6 17 52 85 59",
+          "href": "tel:+33617528559"
+        },
+        {
+          "k": "Instagram",
+          "v": "@lemonydesign.luxury",
+          "note": "(nom de compte à revoir)"
+        }
+      ],
+      "note": "Charte graphique Maison Lemony · Direction A · L'Établi · v1.0 · Octobre 2026<br>À valider : signature, lissage du monogramme, licences, shooting d'atelier."
+    }
+  ]
+}

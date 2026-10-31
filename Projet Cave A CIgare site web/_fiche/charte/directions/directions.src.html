@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Maison Lemony — Directions de charte</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Cinzel:wght@400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: 128mm 228mm; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 9.2pt; line-height: 1.42; color: #1b1d1f; background: #f4f0e8; }
+  .page { width: 128mm; height: 228mm; padding: 11mm 10mm 9mm; page-break-after: always; position: relative; overflow: hidden; }
+  .page:last-child { page-break-after: auto; }
+  .k { font-size: 7pt; letter-spacing: .22em; text-transform: uppercase; margin-bottom: 2mm; opacity: .8; }
+  p { margin-bottom: 1.8mm; } ul { margin: 0 0 2mm 4mm; } li { margin-bottom: 1mm; } b { font-weight: 600; }
+  img { display: block; width: 100%; object-fit: cover; }
+  .num { position: absolute; bottom: 5mm; right: 10mm; font-size: 7pt; letter-spacing: .15em; opacity: .55; }
+  .mono { display: block; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm; }
+  .pal { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5mm; margin: 2mm 0 9.5mm; }
+  .pal div { height: 13mm; border-radius: 1mm; position: relative; border: .2mm solid #0001; }
+  .pal span { position: absolute; left: 0; top: 14mm; font-size: 5.8pt; line-height: 1.2; }
+  .tag { font-size: 6.6pt; letter-spacing: .14em; text-transform: uppercase; margin: 3mm 0 1mm; opacity: .7; }
+  .rule { padding: 2.4mm 3mm; margin: 2.5mm 0; border-left: .8mm solid currentColor; }
+
+  /* ---------- Cover / shared ---------- */
+  .cover { background: #121314; color: #e8e1d3; }
+  .cover h1 { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: 30pt; line-height: 1.02; letter-spacing: .01em; }
+  .cover h2 { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: 17pt; margin: 4mm 0 2mm; }
+  .cover .gold { color: #c1aa77; }
+  .verb { font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 12pt; line-height: 1.3; border-left: .4mm solid #c1aa77; padding-left: 3mm; margin: 2.6mm 0; }
+  .verb small { display: block; font-family: "Helvetica Neue", sans-serif; font-style: normal; font-size: 6.6pt; letter-spacing: .12em; text-transform: uppercase; color: #9a9284; margin-top: .8mm; }
+  .words { display: flex; flex-wrap: wrap; gap: 1.4mm 2.6mm; align-items: baseline; font-family: "Cormorant Garamond", serif; margin: 2mm 0 3mm; }
+  .words span { color: #c1aa77; } .words .w1 { font-size: 22pt; color: #f1ead9; } .words .w2 { font-size: 16pt; } .words .w3 { font-size: 12pt; color: #b7ad9c; }
+
+  .light { background: #f4f0e8; color: #1b1d1f; }
+  .light h2 { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: 18pt; margin-bottom: 3mm; }
+  .light h3 { font-family: "Cormorant Garamond", serif; font-weight: 600; font-size: 12pt; margin: 3mm 0 1mm; color: #8a5a2e; }
+
+  /* ---------- A · L'ÉTABLI ---------- */
+  .A { background: #f3eee4; color: #1e1a16; }
+  .A .k { color: #8f5530; opacity: 1; }
+  .A h2 { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: 26pt; line-height: 1; }
+  .A .lead { font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 12.5pt; margin: 2mm 0 3mm; color: #4a4038; }
+  .A .spec .mononum, .A .mononum { font-family: "IBM Plex Mono", monospace; font-size: 7.2pt; letter-spacing: .06em; color: #6b6156; }
+  .A .lock { display: flex; align-items: center; gap: 4mm; padding: 6mm 4mm; border: .25mm solid #1e1a16; position: relative; }
+  .A .lock .wm { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: 19pt; letter-spacing: .32em; }
+  .A .lock .sub { font-family: "IBM Plex Mono", monospace; font-size: 6.6pt; letter-spacing: .2em; color: #6b6156; margin-top: 1mm; }
+  .A .cote { position: absolute; font-family: "IBM Plex Mono", monospace; font-size: 5.8pt; color: #8f5530; }
+  .A .spec h4 { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: 20pt; line-height: 1.05; }
+  .A .spec p { font-family: "Cormorant Garamond", serif; font-size: 11pt; line-height: 1.35; }
+  .A .btn { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 7pt; letter-spacing: .18em; text-transform: uppercase; background: #1e1a16; color: #f3eee4; padding: 2.4mm 4.5mm; }
+  .A .btn2 { display: inline-block; font-family: "IBM Plex Mono", monospace; font-size: 7pt; letter-spacing: .18em; text-transform: uppercase; border-bottom: .3mm solid #8f5530; color: #1e1a16; padding: 2.4mm 0; margin-left: 4mm; }
+  .A .rule { color: #8f5530; background: #ebe4d6; }
+  .A .rule b { color: #1e1a16; }
+
+  /* ---------- B · CLAIR-OBSCUR ---------- */
+  .B { background: #121314; color: #d9d1c0; }
+  .B .k { color: #b89a5e; opacity: 1; }
+  .B h2 { font-family: "Cinzel", serif; font-weight: 500; font-size: 21pt; letter-spacing: .14em; line-height: 1.15; color: #efe7d6; }
+  .B .lead { font-family: "EB Garamond", serif; font-style: italic; font-size: 12.5pt; margin: 2mm 0 3mm; color: #b7ad9c; }
+  .B .lock { display: flex; flex-direction: column; align-items: center; gap: 2.5mm; padding: 7mm 4mm 6mm; background: radial-gradient(ellipse at 50% 30%, #2a2723 0%, #121314 70%); color: #b89a5e; }
+  .B .lock .wm { font-family: "Cinzel", serif; font-weight: 500; font-size: 15pt; letter-spacing: .38em; color: #efe7d6; margin-right: -.38em; }
+  .B .lock .sub { font-family: "EB Garamond", serif; font-style: italic; font-size: 9pt; color: #9a9284; }
+  .B .spec h4 { font-family: "Cinzel", serif; font-weight: 500; font-size: 15pt; letter-spacing: .12em; color: #efe7d6; }
+  .B .spec p { font-family: "EB Garamond", serif; font-size: 11pt; line-height: 1.38; }
+  .B .btn { display: inline-block; font-family: "Cinzel", serif; font-size: 7pt; letter-spacing: .26em; border: .25mm solid #b89a5e; color: #efe7d6; padding: 2.4mm 5mm; }
+  .B .btn2 { display: inline-block; font-family: "EB Garamond", serif; font-style: italic; font-size: 10pt; color: #b89a5e; margin-left: 4mm; }
+  .B .rule { color: #b89a5e; background: #1b1c1d; }
+  .B .rule b { color: #efe7d6; }
+  .B .pal span { color: #d9d1c0; }
+
+  /* ---------- C · LA VOIX DE SAM ---------- */
+  .C { background: #f6f3ee; color: #111; }
+  .C .k { color: #6b1e1e; opacity: 1; font-family: "Hanken Grotesk", sans-serif; font-weight: 600; }
+  .C h2 { font-family: "Bodoni Moda", serif; font-style: italic; font-weight: 400; font-size: 27pt; line-height: 1; letter-spacing: -.01em; }
+  .C .lead { font-family: "Hanken Grotesk", sans-serif; font-size: 9.6pt; margin: 2.5mm 0 3mm; color: #3d3a36; }
+  .C .lock { display: flex; align-items: flex-end; justify-content: space-between; padding: 4mm 0 3mm; border-top: .6mm solid #111; border-bottom: .2mm solid #111; }
+  .C .lock .wm { font-family: "Bodoni Moda", serif; font-weight: 500; font-size: 22pt; letter-spacing: .04em; line-height: 1; }
+  .C .lock .wm i { font-weight: 400; }
+  .C .lock .sub { font-family: "Hanken Grotesk", sans-serif; font-weight: 600; font-size: 6.4pt; letter-spacing: .24em; text-transform: uppercase; margin-top: 1.4mm; }
+  .C .spec p { font-family: "Hanken Grotesk", sans-serif; font-size: 9.4pt; }
+  .C .btn { display: inline-block; font-family: "Hanken Grotesk", sans-serif; font-weight: 600; font-size: 7.2pt; letter-spacing: .16em; text-transform: uppercase; background: #6b1e1e; color: #f6f3ee; padding: 2.6mm 4.5mm; }
+  .C .btn2 { display: inline-block; font-family: "Bodoni Moda", serif; font-style: italic; font-size: 11pt; color: #111; border-bottom: .3mm solid #111; margin-left: 4mm; }
+  .C .rule { color: #6b1e1e; background: #ece6dc; }
+  .C .rule b { color: #111; }
+  .C .spec .quote, .C .quote { font-family: "Bodoni Moda", serif; font-style: italic; font-size: 15pt; line-height: 1.15; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 8pt; }
+  td, th { text-align: left; vertical-align: top; padding: 1.3mm 1mm; border-bottom: .25mm solid #c9bfae; }
+  th { font-size: 6.6pt; letter-spacing: .12em; text-transform: uppercase; color: #6b665d; font-weight: normal; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>{{MONO}}</defs></svg>
+
+<!-- 1 · SAM EST LA MARQUE -->
+<section class="page cover">
+  <div class="k gold">Maison Lemony · vers une nouvelle charte · oct. 2026</div>
+  <h1>Sam<br>est la <span class="gold">marque.</span></h1>
+  <p style="margin-top:3mm;color:#b7ad9c">Changement de système de pensée : on ne vend plus des caves à cigares photographiées par une IA. On fait entrer le visiteur <b style="color:#f1ead9">dans l'atelier d'un homme</b> qui travaille de ses mains, comme son père avant lui.</p>
+  <h2>Les mots qui reviennent</h2>
+  <p style="font-size:7.6pt;color:#9a9284">Relevé dans le site, la brochure, la présentation et les 3 articles de presse.</p>
+  <div class="words">
+    <span class="w1">main</span><span class="w2">artisan</span><span class="w1">cuir</span><span class="w3">sur-mesure</span><span class="w2">passion</span><span class="w3">atelier</span><span class="w2">héritage</span><span class="w3">tannerie</span><span class="w2">geste</span><span class="w3">matière</span><span class="w3">unique</span><span class="w2">temps</span><span class="w3">métier</span><span class="w3">toucher</span><span class="w2">transmission</span>
+  </div>
+  <h2>Ses mots à lui</h2>
+  <div class="verb">« Le cuir, une matière qui a une histoire et une odeur. »<small>Sam, L'Essor, avril 2026</small></div>
+  <div class="verb">« Mon père était tanneur. »<small>Sam, Le Dauphiné Libéré</small></div>
+  <div class="verb">« Façonner le cuir, c'est donner vie à une matière noble pour créer un objet intemporel, chargé d'émotion, de parfum et d'histoire. »<small>Présentation Lemony</small></div>
+  <div class="verb">« Passion is the key. »<small>Gravé à chaud dans le cuir, à l'atelier</small></div>
+  <div class="num">01</div>
+</section>
+
+<!-- 2 · LE SOCLE COMMUN -->
+<section class="page light">
+  <div class="k" style="color:#8a5a2e">Ce que les 3 directions partagent</div>
+  <h2>Le socle, quelle que soit la direction</h2>
+  <h3>La promesse</h3>
+  <p><b>À l'heure des objets jetables, une pièce faite par un homme, pour une vie.</b> Le visiteur doit sentir qu'il arrive chez un artiste, pas dans une boutique. Le frisson vient du vrai : la main, l'outil, la peau, le temps passé.</p>
+  <h3>Trois pistes de signature</h3>
+  <ul style="font-family:'Cormorant Garamond',serif;font-size:12.5pt;line-height:1.3">
+    <li>« Fait de mes mains. »</li>
+    <li>« Le geste avant l'objet. »</li>
+    <li>« L'art de préserver l'exception. » <span style="font-family:'Helvetica Neue';font-size:7.4pt;color:#6b665d">(celle du site actuel)</span></li>
+  </ul>
+  <h3>Les règles qui ne bougent pas</h3>
+  <ul>
+    <li><b>Zéro visuel IA</b> sur le site. Seulement de vraies pièces, de vraies mains, le vrai atelier.</li>
+    <li><b>Sam est présent sur chaque page</b> : une main, un outil, une phrase de lui, une signature.</li>
+    <li><b>Chaque cave est numérotée</b> (« Pièce n° 007 ») et signée, comme une œuvre. Une dizaine de pièces par mois, 8 à 10 semaines de fabrication : la rareté est réelle.</li>
+    <li><b>Aucun prix affiché.</b> Tout passe par une demande et une conversation.</li>
+    <li><b>Le vocabulaire du métier</b> plutôt que celui du marketing : parer, griffer, point sellier, gainer, patine, fleur du cuir.</li>
+    <li><b>Une seule couleur d'accent</b>, et des variables CSS dès le départ.</li>
+  </ul>
+  <div class="grid2" style="margin-top:2mm">
+    <img src="img/couture.jpg" style="height:28mm">
+    <img src="img/angle.jpg" style="height:28mm">
+  </div>
+  <p style="font-size:7.2pt;color:#6b665d;margin-top:1mm">Vraies photos d'une pièce de Sam (Cigar and Spice) : c'est ce grain-là qu'on cherche.</p>
+  <div class="num">02</div>
+</section>
+
+<!-- 3 · MONOGRAMME -->
+<section class="page light">
+  <div class="k" style="color:#8a5a2e">Le monogramme vectorisé</div>
+  <h2>De 76 px à l'infini</h2>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:3mm;align-items:stretch">
+    <div style="background:#e7e0d2;display:flex;align-items:center;justify-content:center;padding:4mm"><img src="img/pastille.jpg" style="height:52mm;width:52mm;border-radius:50%"></div>
+    <div style="background:#fff;display:flex;align-items:center;justify-content:center;padding:4mm;color:#1e1a16"><svg class="mono" style="height:56mm;width:30mm"><use href="#mono"/></svg></div>
+  </div>
+  <p style="font-size:7.2pt;color:#6b665d;margin-top:1mm">À gauche, la source : la pastille gravée de l'hygromètre (2556 px). À droite, le tracé vectoriel en SVG : 2 contours, couleur libre, net à toutes les tailles.</p>
+  <h3>Ce que c'est</h3>
+  <p>Un <b>L calligraphié</b> d'un seul geste de plume : une boucle ouverte, une pointe en flamme, une queue qui file vers le bas comme une couture qui s'achève.</p>
+  <h3>Les raffinements proposés</h3>
+  <table>
+    <tr><th>Direction</th><th>Raffinement</th></tr>
+    <tr><td><b>A · L'Établi</b></td><td>Tracé lissé, posé dans un <b>poinçon ovale</b> comme une marque frappée à chaud dans le cuir.</td></tr>
+    <tr><td><b>B · Clair-obscur</b></td><td>Tracé affiné (pleins et déliés plus contrastés), en <b>or</b>, seul et centré, comme une gravure.</td></tr>
+    <tr><td><b>C · La voix de Sam</b></td><td>Utilisé en <b>signature</b> à la fin des textes de Sam, comme un paraphe.</td></tr>
+  </table>
+  <h3>Avant usage professionnel</h3>
+  <p style="font-size:8.4pt">Le tracé est fidèle mais garde de petites ondulations de la gravure. Un lissage manuel des courbes (Illustrator ou Figma, environ 1 h) est recommandé avant l'impression et la gravure laser.</p>
+  <div class="num">03</div>
+</section>
+
+<!-- 4 · DIRECTION A -->
+<section class="page A">
+  <div class="k">Direction A · L'Établi</div>
+  <h2>Le carnet<br>d'atelier</h2>
+  <p class="lead">La marque comme un établi : la lumière du jour, le papier, la cote au crayon, l'outil posé.</p>
+  <div class="lock">
+    <span class="cote" style="top:1.2mm;left:2mm">↔ zone de protection = hauteur du L</span>
+    <div style="width:15mm;height:21mm;border:.3mm solid #1e1a16;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none"><svg class="mono" style="height:15mm;width:8mm"><use href="#mono"/></svg></div>
+    <div><div class="wm">LEMONY</div><div class="sub">MAISON · VIENNE · 2017</div></div>
+    <span class="cote" style="bottom:1.2mm;right:2mm">PIÈCE N° 007</span>
+  </div>
+  <div class="tag">Palette</div>
+  <div class="pal">
+    <div style="background:#f3eee4"><span>Papier<br>#F3EEE4</span></div>
+    <div style="background:#e5dccb"><span>Kraft<br>#E5DCCB</span></div>
+    <div style="background:#1e1a16"><span>Encre<br>#1E1A16</span></div>
+    <div style="background:#6b6156"><span>Mine<br>#6B6156</span></div>
+    <div style="background:#8f5530"><span>Cognac<br>#8F5530</span></div>
+  </div>
+  <div class="tag">Typographie · Cormorant Garamond + IBM Plex Mono</div>
+  <div class="spec">
+    <h4>Parer, griffer, coudre au point sellier.</h4>
+    <p>Huit à dix semaines entre les mains de Sam, de la découpe de la peau à la dernière couture.</p>
+    <p class="mononum">CROCODILE POROSUS · 405 × 285 × 128 MM · 150 CIGARES</p>
+  </div>
+  <div style="margin:3mm 0"><span class="btn">Prendre rendez-vous</span><span class="btn2">Voir l'atelier →</span></div>
+  <div class="rule"><b>Règle signature :</b> tout ce qui est technique s'écrit en mono, comme une cote d'atelier (dimensions, numéro de pièce, nom de la peau). Le cognac ne sert qu'aux traits et aux annotations.</div>
+  <p style="font-size:8pt"><b>Photo :</b> lumière du jour, établi en plan large, outils alignés, mains en action, chutes de cuir. <b>Ressenti :</b> l'authenticité, l'atelier ouvert. <b>Risque :</b> moins « nocturne » que l'univers cigare attendu.</p>
+  <div class="num">04</div>
+</section>
+
+<!-- 5 · DIRECTION B -->
+<section class="page B">
+  <div class="k">Direction B · Clair-obscur</div>
+  <h2>LA LAMPE<br>D'ATELIER</h2>
+  <p class="lead">La nuit tombe sur l'atelier. Une seule lampe éclaire les mains de Sam et la peau qu'il travaille.</p>
+  <div class="lock">
+    <svg class="mono" style="height:20mm;width:11mm"><use href="#mono"/></svg>
+    <div class="wm">LEMONY</div>
+    <div class="sub">Maison fondée à Vienne</div>
+  </div>
+  <div class="tag">Palette</div>
+  <div class="pal">
+    <div style="background:#121314;border-color:#3a3a3a"><span>Nuit<br>#121314</span></div>
+    <div style="background:#1f1d1b;border-color:#3a3a3a"><span>Fumée<br>#1F1D1B</span></div>
+    <div style="background:#d9d1c0"><span>Sable<br>#D9D1C0</span></div>
+    <div style="background:#9a9284"><span>Cendre<br>#9A9284</span></div>
+    <div style="background:#b89a5e"><span>Or patiné<br>#B89A5E</span></div>
+  </div>
+  <div class="tag">Typographie · Cinzel + EB Garamond</div>
+  <div class="spec">
+    <h4>LA PATINE DU TEMPS</h4>
+    <p>Une cave Lemony ne vieillit pas : elle se patine. Le cuir fonce, le bois se réchauffe, la serrure s'use sous le pouce. Elle devient la vôtre.</p>
+  </div>
+  <div style="margin:3mm 0"><span class="btn">PRENDRE RENDEZ-VOUS</span><span class="btn2">Entrer dans l'atelier</span></div>
+  <div class="rule"><b>Règle signature :</b> un seul point de lumière par écran. L'or n'est jamais une surface, seulement un filet, un poinçon ou une lettre.</div>
+  <p style="font-size:8pt"><b>Photo :</b> clair-obscur à la Caravage, fond noir, lumière rasante sur le grain, fumée de cigare. <b>Ressenti :</b> le frisson, le mystère, le club privé. <b>Risque :</b> proche de ce que font déjà les marques de cigare ; il faut une photo excellente.</p>
+  <div class="num">05</div>
+</section>
+
+<!-- 6 · DIRECTION C -->
+<section class="page C">
+  <div class="k">Direction C · La voix de Sam</div>
+  <h2>Je travaille<br>de mes mains.</h2>
+  <p class="lead">Une marque d'auteur, comme une galerie d'art ou une maison de couture : le texte à la première personne, la photo en grand, beaucoup de blanc.</p>
+  <div class="lock">
+    <div><div class="wm">Maison <i>Lemony</i></div><div class="sub">Samuel Basmadjian · Maître artisan d'art</div></div>
+    <svg class="mono" style="height:17mm;width:9mm;color:#6b1e1e;flex:none"><use href="#mono"/></svg>
+  </div>
+  <div class="tag">Palette</div>
+  <div class="pal">
+    <div style="background:#f6f3ee"><span>Os<br>#F6F3EE</span></div>
+    <div style="background:#e4ddd1"><span>Lin<br>#E4DDD1</span></div>
+    <div style="background:#111111"><span>Noir<br>#111111</span></div>
+    <div style="background:#5c5853"><span>Graphite<br>#5C5853</span></div>
+    <div style="background:#6b1e1e"><span>Sang-de-bœuf<br>#6B1E1E</span></div>
+  </div>
+  <div class="tag">Typographie · Bodoni Moda + Hanken Grotesk</div>
+  <div class="spec">
+    <p class="quote">« Mon père était tanneur. Le cuir, c'est une matière qui vit et qui a une histoire. »</p>
+    <p style="margin-top:2mm">Samuel Basmadjian, 187ᵉ Maître artisan d'art de l'Isère, troisième génération de tanneurs.</p>
+  </div>
+  <div style="margin:3mm 0"><span class="btn">Rencontrer Sam</span><span class="btn2">Lire son histoire</span></div>
+  <div class="rule"><b>Règle signature :</b> l'italique est réservé à la voix de Sam. Toute phrase en italique est de lui (de vraies citations), signée de son monogramme en sang-de-bœuf.</div>
+  <p style="font-size:8pt"><b>Photo :</b> portraits serrés de Sam en noir et blanc, et pièces en couleur sur fond neutre. <b>Ressenti :</b> l'artiste, l'exclusivité, la rencontre. <b>Risque :</b> Sam doit accepter d'être très exposé (portraits, voix, vidéo).</p>
+  <div class="num">06</div>
+</section>
+
+<!-- 7 · COMPARER & CHOISIR -->
+<section class="page light">
+  <div class="k" style="color:#8a5a2e">Comparer et choisir</div>
+  <h2>Trois façons de raconter Sam</h2>
+  <table>
+    <tr><th></th><th>A · L'Établi</th><th>B · Clair-obscur</th><th>C · La voix</th></tr>
+    <tr><td><b>Ambiance</b></td><td>Jour, atelier ouvert</td><td>Nuit, club privé</td><td>Galerie, maison d'auteur</td></tr>
+    <tr><td><b>Fond</b></td><td>Papier clair</td><td>Noir</td><td>Blanc os</td></tr>
+    <tr><td><b>Accent</b></td><td>Cognac</td><td>Or patiné</td><td>Sang-de-bœuf</td></tr>
+    <tr><td><b>Titres</b></td><td>Garamond doux</td><td>Capitales gravées</td><td>Bodoni italique</td></tr>
+    <tr><td><b>Ce qu'on retient</b></td><td>L'outil, la cote</td><td>La lumière, la patine</td><td>L'homme, sa parole</td></tr>
+    <tr><td><b>Lien avec l'existant</b></td><td>Rupture</td><td>Continuité, en mieux</td><td>Rupture forte</td></tr>
+    <tr><td><b>Photo à produire</b></td><td>Atelier de jour</td><td>Studio, clair-obscur</td><td>Portraits + pièces</td></tr>
+  </table>
+  <h3>Mon avis</h3>
+  <p><b>B pour l'ambiance, C pour la parole.</b> Le noir de B donne le frisson attendu par la cible cigare et prolonge ce que Sam a déjà. La règle de C (l'italique, c'est la voix de Sam, signée du monogramme) est ce qui rendra le site unique. Un mélange B + C est possible : fond nuit, capitales Cinzel, et la voix de Sam en italique Garamond signée en or.</p>
+  <h3>Pour trancher</h3>
+  <ul>
+    <li>Choisir A, B ou C, ou un mélange (« la palette de B avec la règle de C »).</li>
+    <li>Choisir la signature : « Fait de mes mains », « Le geste avant l'objet » ou une autre.</li>
+    <li>Supports : je pars sur le site, l'impression (brochure FR/EN, plaque, carte) et Instagram, sauf avis contraire.</li>
+  </ul>
+  <div class="num">07</div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Audit lemony-design.com</title>
+<style>
+  @page { size: 128mm 228mm; margin: 0; }
+  :root {
+    --ink: #1b1d1f; --paper: #f4f0e8; --sand: #c9bfae; --gold: #a8854a;
+    --night: #14191b; --muted: #6b665d; --red: #8c2f2b;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 9.4pt; line-height: 1.42; color: var(--ink); background: var(--paper); }
+  .page { width: 128mm; height: 228mm; padding: 11mm 10mm 9mm; page-break-after: always; position: relative; overflow: hidden; }
+  .page:last-child { page-break-after: auto; }
+  .dark { background: var(--night); color: #e9e4da; }
+  .dark .k { color: var(--sand); }
+  h1, h2, h3 { font-family: "Baskerville", "Didot", Georgia, serif; font-weight: normal; }
+  h1 { font-size: 27pt; letter-spacing: .05em; line-height: 1.05; }
+  h2 { font-size: 16pt; margin-bottom: 3mm; letter-spacing: .02em; }
+  h3 { font-size: 11pt; margin: 3mm 0 1.2mm; color: var(--gold); }
+  .k { font-size: 7.2pt; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-bottom: 2mm; }
+  p { margin-bottom: 1.8mm; }
+  ul { margin: 0 0 2mm 4mm; } li { margin-bottom: 1mm; }
+  b { font-weight: 600; }
+  img { display: block; width: 100%; object-fit: cover; border-radius: 1.2mm; }
+  .cap { font-size: 7.4pt; color: var(--muted); margin: 1mm 0 2mm; }
+  .dark .cap { color: var(--sand); }
+  .num { position: absolute; bottom: 5mm; right: 10mm; font-size: 7pt; color: var(--muted); letter-spacing: .15em; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm; }
+  .box { border: .3mm solid var(--sand); border-radius: 1.5mm; padding: 2.4mm 3mm; margin-bottom: 2.5mm; }
+  .dark .box { border-color: #3a4245; }
+  .alert { border-left: 1mm solid var(--red); background: #efe3dc; padding: 2mm 3mm; margin: 2mm 0; border-radius: 0 1.5mm 1.5mm 0; }
+  .good { border-left: 1mm solid #4f7a3a; background: #e3ead9; padding: 2mm 3mm; margin: 2mm 0; border-radius: 0 1.5mm 1.5mm 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 8.2pt; }
+  td, th { text-align: left; vertical-align: top; padding: 1.2mm 1mm; border-bottom: .25mm solid var(--sand); }
+  th { font-size: 6.8pt; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: normal; }
+  .dark td { border-color: #3a4245; }
+  .sw { display: grid; grid-template-columns: 9mm 1fr; gap: 2mm; align-items: center; margin-bottom: 1.6mm; font-size: 8.2pt; }
+  .sw i { display: block; width: 9mm; height: 9mm; border-radius: 1.2mm; border: .25mm solid #0002; }
+  .note { display: inline-block; font-size: 6.8pt; letter-spacing: .08em; text-transform: uppercase; padding: .3mm 1.5mm; border-radius: 3mm; }
+  .n-ok { background: #dfe8d6; color: #34502a; } .n-mid { background: #f1e5c8; color: #6d5310; } .n-ko { background: #f0d6d3; color: var(--red); }
+  .score { display: grid; grid-template-columns: 1fr auto; gap: 1mm 3mm; font-size: 8.6pt; }
+  .score b { font-family: Baskerville, Georgia, serif; font-size: 11pt; color: var(--gold); font-weight: normal; text-align: right; }
+  .perp { font-family: "Perpetua Titling MT", "Perpetua", "Baskerville", serif; letter-spacing: .12em; }
+</style>
+</head>
+<body>
+
+<!-- 1 · COUVERTURE -->
+<section class="page dark">
+  <div class="k">Audit de l'existant · lemony-design.com · oct. 2026</div>
+  <h1>LE SITE<br>ACTUEL</h1>
+  <p style="color:var(--sand);margin:1.5mm 0 4mm;font-family:Baskerville,Georgia,serif;font-size:11pt">Direction artistique, structure, contenus, technique</p>
+  <img src="img/caves_hero.jpg" style="height:52mm">
+  <p class="cap">La page Caves à cigares en 1440 × 900 : le meilleur écran du site.</p>
+  <h3>Verdict en 30 secondes</h3>
+  <ul>
+    <li><b>Deux sites en un.</b> Le gros du site est un catalogue de maroquinerie (sacs, portefeuilles, bracelets, champagne). La cave à cigares a été <b>ajoutée après coup</b>, sur une page plus sombre, plus récente et plus soignée.</li>
+    <li><b>Une intuition juste</b> : noir bleuté, sable, typo capitale à l'antique. C'est la base à garder.</li>
+    <li><b>Une exécution qui ne suit pas</b> : 4 polices, une vingtaine de tailles, le bleu Bootstrap qui traîne, un logo PNG de 76 px, des pages incohérentes entre elles.</li>
+    <li><b>La page Caves pèse 20,7 Mo.</b> Sur mobile en 4G, c'est plusieurs secondes d'écran noir.</li>
+  </ul>
+  <div class="num">01</div>
+</section>
+
+<!-- 2 · NOTES -->
+<section class="page">
+  <div class="k">01 — Bulletin</div>
+  <h2>Notes par critère</h2>
+  <div class="box score">
+    <span>Intention de marque (ton, univers)</span><b>13/20</b>
+    <span>Cohérence visuelle entre les pages</span><b>6/20</b>
+    <span>Typographie</span><b>7/20</b>
+    <span>Couleur</span><b>11/20</b>
+    <span>Logo et identité</span><b>8/20</b>
+    <span>Photographie</span><b>10/20</b>
+    <span>Structure et parcours</span><b>7/20</b>
+    <span>Mobile</span><b>9/20</b>
+    <span>Performance</span><b>3/20</b>
+    <span>SEO et accessibilité</span><b>9/20</b>
+  </div>
+  <p class="cap" style="margin-top:-1mm">Notes subjectives, pour hiérarchiser les chantiers, pas pour juger le travail de Loew-Tech.</p>
+  <h3>Ce qu'on garde</h3>
+  <div class="good">
+    <ul style="margin-bottom:0">
+      <li>L'ambiance <b>nuit + sable</b> de la page Caves.</li>
+      <li>L'esprit des <b>capitales romaines espacées</b> (Perpetua Titling).</li>
+      <li>Le <b>monogramme calligraphié</b> : une vraie signature, à redessiner.</li>
+      <li>Des textes forts : « L'art de préserver l'exception », « Du geste à l'émotion ».</li>
+      <li>La section <b>Matières nobles</b> (bois et cuirs illustrés).</li>
+    </ul>
+  </div>
+  <h3>Ce qu'on jette</h3>
+  <div class="alert">
+    <ul style="margin-bottom:0">
+      <li>Le catalogue maroquinerie en page d'accueil.</li>
+      <li>Le gris clair et le bleu de l'accueil, qui n'ont rien à voir avec la cave.</li>
+      <li>Les composants Bootstrap bruts, Arial, Georgia, les icônes Font Awesome.</li>
+      <li>Les logos partenaires en vrac, le pied de page en Arial blanc et rouge.</li>
+    </ul>
+  </div>
+  <div class="num">02</div>
+</section>
+
+<!-- 3 · ARBORESCENCE -->
+<section class="page">
+  <div class="k">02 — Carte du site</div>
+  <h2>8 pages, 3 menus différents</h2>
+  <table>
+    <tr><th>Page</th><th>Contenu</th><th>État</th></tr>
+    <tr><td><b>Accueil</b></td><td>Carrousel maroquinerie, catégories, bloc Cave, partenaires</td><td><span class="note n-mid">Hors sujet</span></td></tr>
+    <tr><td><b>Caves à cigares</b></td><td>Hero, texte, galerie, bois, cuirs, savoir-faire, CTA</td><td><span class="note n-ok">La base</span></td></tr>
+    <tr><td><b>À propos</b></td><td>Vidéo « Imagine something different », histoire, cuirs</td><td><span class="note n-mid">Daté</span></td></tr>
+    <tr><td><b>Sur-mesure</b></td><td>Carrousel (champagne, flasque, sac), manifeste, références</td><td><span class="note n-mid">Fourre-tout</span></td></tr>
+    <tr><td><b>Créations</b></td><td>220 images, onglets « Divers » et « Divers2 »</td><td><span class="note n-ko">Cassée</span></td></tr>
+    <tr><td><b>Contact</b></td><td>Coordonnées, horaires, formulaire, rendez-vous</td><td><span class="note n-ok">Correct</span></td></tr>
+    <tr><td>Mentions, plan</td><td>Légal</td><td><span class="note n-ok">OK</span></td></tr>
+    <tr><td>Cookies</td><td>Lien du pied de page</td><td><span class="note n-ko">Erreur 404</span></td></tr>
+  </table>
+  <h3>Incohérences de navigation</h3>
+  <ul>
+    <li><b>Créations</b> n'est pas dans le menu principal, mais c'est là que se trouvent les produits. Sa barre de menu n'affiche ni « Caves à cigares » ni le sous-titre « Maître Artisan d'Art ».</li>
+    <li>Le pied de page de l'accueil ne liste pas la page Caves.</li>
+    <li>La cave à cigares apparaît à trois endroits avec trois noms : « Collection d'exception », « Caves à cigares » et, dans Créations, « Écrins et saveurs ».</li>
+    <li>Les bulles flottantes mail et téléphone sont présentes partout et masquent du contenu sur mobile.</li>
+  </ul>
+  <div class="num">03</div>
+</section>
+
+<!-- 4 · DEUX VISAGES -->
+<section class="page dark">
+  <div class="k">03 — Le problème central</div>
+  <h2>Deux identités se battent</h2>
+  <img src="img/accueil_hero.jpg" style="height:42mm">
+  <p class="cap">Accueil : bleu glacé, produit flottant, esthétique tech et lifestyle.</p>
+  <img src="img/caves_hero_titre.jpg" style="height:42mm">
+  <p class="cap">Caves : nuit, cuir cognac, lumière chaude, esthétique club anglais.</p>
+  <p>Le visiteur qui arrive par l'accueil ne voit <b>aucune cave</b> au-dessus de la ligne de flottaison. Il voit un portefeuille bleu sous une lumière de studio. La page Caves raconte autre chose, avec d'autres couleurs.</p>
+  <p><b>Conséquence pour la refonte :</b> la nouvelle charte doit partir de l'univers de la page Caves et le pousser beaucoup plus loin. Elle ne doit pas chercher un compromis entre les deux.</p>
+  <div class="num">04</div>
+</section>
+
+<!-- 5 · COULEURS -->
+<section class="page">
+  <div class="k">04 — Couleurs extraites du CSS</div>
+  <h2>La palette réelle</h2>
+  <p>Relevé de toutes les couleurs dans les 8 feuilles de style (5 145 lignes). Le nombre indique combien de fois chaque couleur est utilisée.</p>
+  <div class="grid2">
+    <div>
+      <div class="sw"><i style="background:#15191a"></i><span><b>#15191A</b> · 16×<br>Noir bleuté, fond Caves</span></div>
+      <div class="sw"><i style="background:#0d0f10"></i><span><b>#0D0F10</b> · 4×<br>Noir profond, dégradés</span></div>
+      <div class="sw"><i style="background:#c1bca7"></i><span><b>#C1BCA7</b> · 33×<br>Sable, titres et textes</span></div>
+      <div class="sw"><i style="background:#c1aa77"></i><span><b>#C1AA77</b> · ~20× en rgba<br>Or doux, filets et accents</span></div>
+      <div class="sw"><i style="background:#8a8474"></i><span><b>#8A8474</b> · 5×<br>Taupe, texte secondaire</span></div>
+      <div class="sw"><i style="background:#f5f0e8"></i><span><b>#F5F0E8</b> · 4×<br>Ivoire</span></div>
+    </div>
+    <div>
+      <div class="sw"><i style="background:#ccc"></i><span><b>#CCCCCC</b> · 12×<br>Gris clair, fonds de l'accueil</span></div>
+      <div class="sw"><i style="background:#0062cc"></i><span><b>#0062CC</b> · 16×<br>Bleu Bootstrap, liens</span></div>
+      <div class="sw"><i style="background:#fdf497"></i><span><b>#FDF497</b> · 12×<br>Jaune, dégradé Instagram</span></div>
+      <div class="sw"><i style="background:#d6249f"></i><span><b>#D6249F</b> · 6×<br>Magenta Instagram</span></div>
+      <div class="sw"><i style="background:#dc3545"></i><span><b>#DC3545</b> · 8×<br>Rouge Bootstrap, erreurs</span></div>
+      <div class="sw"><i style="background:#3b5998"></i><span><b>#3B5998</b> · 6×<br>Bleu Facebook</span></div>
+    </div>
+  </div>
+  <div class="good"><b>Le bon trio est là :</b> #15191A + #C1BCA7 + #C1AA77. Contraste sable sur noir : environ 9,6:1, excellent pour du texte.</div>
+  <div class="alert"><b>Le reste est du bruit</b> : les couleurs de réseaux sociaux et de Bootstrap n'ont pas été choisies, elles sont restées par défaut. Il n'y a aucune variable CSS : chaque couleur est retapée à la main, ce qui explique les dérives (#C1BCA7, #C1AA77, #C9BFAE dans la brochure…).</div>
+  <div class="num">05</div>
+</section>
+
+<!-- 6 · TYPO -->
+<section class="page">
+  <div class="k">05 — Typographie</div>
+  <h2>4 familles, aucun système</h2>
+  <table>
+    <tr><th>Police</th><th>Usage relevé</th><th>Avis</th></tr>
+    <tr><td><b class="perp">PERPETUA TITLING MT LIGHT</b><br><span class="cap">renommée « FonteLoewTech »</span></td><td>Logo, menu, titres (≈ 80 occurrences)</td><td><span class="note n-mid">À remplacer</span></td></tr>
+    <tr><td><b style="font-family:Georgia">Georgia</b></td><td>Textes courants (20×)</td><td><span class="note n-ko">Par défaut</span></td></tr>
+    <tr><td><b style="font-family:Arial">Arial</b></td><td>Pied de page, Créations (13×)</td><td><span class="note n-ko">Par défaut</span></td></tr>
+    <tr><td><b>Montserrat</b></td><td>Déclarée 5×, <b>jamais chargée</b></td><td><span class="note n-ko">Fantôme</span></td></tr>
+  </table>
+  <h3>Les points qui posent problème</h3>
+  <ul>
+    <li><b>Licence :</b> Perpetua Titling est une police commerciale Monotype. Le fichier .ttf est hébergé sur le serveur sous un autre nom. <b>Une licence web est-elle payée ?</b> À vérifier : c'est un risque juridique.</li>
+    <li><b>Une seule graisse</b> (Light) et <b>que des capitales</b> : impossible de construire une hiérarchie, d'où l'appel à Georgia et Arial.</li>
+    <li><b>Une vingtaine de tailles</b> différentes en px, rem et clamp (11, 12, 13, 14, 15, 16, 17, 18, 20, 24 px…). Aucune échelle.</li>
+    <li>Le tracking (espacement des lettres) change d'une section à l'autre.</li>
+  </ul>
+  <h3>Direction pour la refonte</h3>
+  <p>Garder l'esprit « capitale romaine gravée » avec une famille libre et complète (par exemple <b>Cormorant</b>, <b>Cinzel</b> pour les capitales, ou <b>Marcellus</b>), et l'associer à un texte courant lisible. Une seule échelle, en variables CSS.</p>
+  <div class="num">06</div>
+</section>
+
+<!-- 7 · LOGO -->
+<section class="page dark">
+  <div class="k">06 — Logo et signature</div>
+  <h2>Un monogramme sans fichier source</h2>
+  <div class="grid2" style="align-items:center">
+    <div style="background:#e9e4da;border-radius:1.5mm;padding:5mm;display:flex;justify-content:center"><img src="img/monogramme.png" style="width:auto;height:34mm;object-fit:contain"></div>
+    <div>
+      <p class="perp" style="font-size:16pt;color:#fff;text-align:center;margin-bottom:0">LEMONY</p>
+      <p class="perp" style="font-size:6.5pt;text-align:center;color:var(--sand)">MAÎTRE ARTISAN D'ART</p>
+      <p class="cap" style="text-align:center">Wordmark : texte en Perpetua, pas un dessin</p>
+    </div>
+  </div>
+  <h3>Constat</h3>
+  <ul>
+    <li><b>Le monogramme</b> (un L calligraphié en forme de flamme ou de feuille) n'existe qu'en <b>PNG de 76 × 174 px</b>. Il est flou au-delà de la taille du menu et inutilisable en impression ou en gravure.</li>
+    <li><b>Le wordmark</b> « LEMONY » est du texte dans la police du site. Ce n'est pas un logo dessiné : il varie selon la page (en blanc, en noir, avec ou sans sous-titre).</li>
+    <li>Ailleurs, on trouve une plaque dorée « LEMONY Made in France » et une signature gravée. Ce sont d'autres versions encore.</li>
+    <li>En 800 px de large, le wordmark <b>chevauche le menu</b> (« LEMONY » passe sur « ACCUEIL »).</li>
+    <li>Pas de favicon dédié.</li>
+  </ul>
+  <h3>À demander</h3>
+  <p>Qui a dessiné le monogramme ? Existe-t-il un fichier vectoriel (AI, SVG, PDF) ? Le monogramme est-il déposé (la présentation mentionne un dépôt de marque et de modèle) ?</p>
+  <div class="num">07</div>
+</section>
+
+<!-- 8 · PAGE CAVES -->
+<section class="page">
+  <div class="k">07 — Zoom sur la page Caves</div>
+  <h2>La meilleure page, à moitié réussie</h2>
+  <div class="grid2">
+    <div><img src="img/caves_galerie.jpg" style="height:27mm"><p class="cap">Galerie : 9 images, dont beaucoup sont des rendus IA.</p></div>
+    <div><img src="img/caves_matieres.jpg" style="height:27mm"><p class="cap">Matières nobles : la plus belle section.</p></div>
+  </div>
+  <h3>Déroulé</h3>
+  <p style="font-size:8.4pt">Hero plein écran (carrousel de 9 images) → « La cave à cigares selon Lemony » (texte) → galerie → 6 bois → 7 cuirs → 5 pictos savoir-faire → « L'excellence du geste » → CTA « Votre cave, votre signature » → formulaire → pied de page.</p>
+  <h3>Ce qui fonctionne</h3>
+  <ul>
+    <li>Ambiance cohérente, beaucoup de noir, lumière chaude.</li>
+    <li>Les bois et les cuirs présentés comme des matières : ça prépare un configurateur.</li>
+    <li>Le titre en capitales espacées est élégant.</li>
+  </ul>
+  <h3>Ce qui casse</h3>
+  <ul>
+    <li><b>Au premier écran</b>, le titre arrive en animation : on voit d'abord un bouton posé sur la serrure de la cave.</li>
+    <li>Le contenu est caché tant qu'on n'a pas scrollé. Si le script tarde, la page est <b>noire</b>.</li>
+    <li>La barre de menu <b>passe au blanc</b> au scroll, sur une page noire. Ça casse l'ambiance.</li>
+    <li>Les 5 pictos sont des icônes Font Awesome génériques.</li>
+    <li>Aucune info concrète : pas de tailles, pas de collections (Héritage, Prestige…), pas de prix, pas de délai.</li>
+    <li>« Quatre générations de tanneurs » ici, « trois » dans la brochure.</li>
+  </ul>
+  <div class="num">08</div>
+</section>
+
+<!-- 9 · COMPOSANTS -->
+<section class="page">
+  <div class="k">08 — Composants d'interface</div>
+  <h2>Inventaire des briques</h2>
+  <table>
+    <tr><th>Composant</th><th>Réalisation actuelle</th></tr>
+    <tr><td><b>Boutons</b></td><td>Contour fin sable, capitales espacées (Caves) ; noir plein « en savoir plus » (Créations) ; liens bleus (onglets)</td></tr>
+    <tr><td><b>Menu</b></td><td>Transparent sur le hero puis blanc au scroll ; burger Bootstrap sur mobile</td></tr>
+    <tr><td><b>Carrousels</b></td><td>5 différents : Bootstrap, lightSlider, flèches « Previous / Next » en anglais</td></tr>
+    <tr><td><b>Cartes</b></td><td>Image + légende sur dégradé (Matières) ; cartes blanches Bootstrap (Créations)</td></tr>
+    <tr><td><b>Séparateur</b></td><td>Petit filet or sous les titres : joli, à garder</td></tr>
+    <tr><td><b>Formulaire</b></td><td>« Envoyez-nous un message » en bas de toutes les pages, style Bootstrap</td></tr>
+    <tr><td><b>Pied de page</b></td><td>Noir, Arial, logo Maître Artisan rouge, drapeau, icônes réseaux en couleur</td></tr>
+    <tr><td><b>Animations</b></td><td>Fondus à l'apparition (anime.js), sans réglage pour « mouvement réduit »</td></tr>
+  </table>
+  <div class="grid2" style="margin-top:3mm">
+    <div><img src="img/creations.jpg" style="height:28mm"><p class="cap">Créations : Arial, bleu Bootstrap, onglets « Divers2 ».</p></div>
+    <div><img src="img/caves_footer.jpg" style="height:28mm"><p class="cap">Pied de page : Arial, logos en couleur, rouge vif.</p></div>
+  </div>
+  <div class="num">09</div>
+</section>
+
+<!-- 10 · CONTENUS & TON -->
+<section class="page">
+  <div class="k">09 — Contenus et ton</div>
+  <h2>Une belle plume, mal relue</h2>
+  <h3>Les phrases à garder</h3>
+  <ul style="font-family:Baskerville,Georgia,serif;font-style:italic">
+    <li>« L'art de préserver l'exception. »</li>
+    <li>« Là où le temps se suspend. »</li>
+    <li>« Une cave Lemony n'est pas un simple accessoire, c'est un héritage. »</li>
+    <li>« La main guide la matière, la matière inspire la main. »</li>
+    <li>« Chaque pièce naît d'une conversation. »</li>
+  </ul>
+  <h3>Les défauts</h3>
+  <ul>
+    <li><b>Trop d'adjectifs</b> : « exception », « noble », « absolu », « prestigieux » reviennent à chaque phrase et finissent par s'annuler.</li>
+    <li><b>Contradictions</b> : 3 ou 4 générations ; « Maison Lemony », « Lemony » ou « Lemony Design » ; « crocodile » annoncé mais pas montré.</li>
+    <li><b>Restes de chantier</b> : texte bouche-trou « Titre / Description de l'article » visible dans Créations, onglet « Divers2 », boutons « Previous / Next ».</li>
+    <li><b>Fautes</b> : « fût l'ultime déclic », « MATIERES A l'OBJET Du DESIR ».</li>
+    <li>Aucun contenu en <b>anglais</b>, alors que la clientèle visée est internationale (Genève, Monaco, yachting).</li>
+  </ul>
+  <h3>Preuves citées sur le site</h3>
+  <p style="font-size:8.4pt">Maison Zilli, Patrick Henriroux / La Pyramide, Maison Ladoire (horlogerie), Jazz à Vienne, La Loge, Maison Brun, Cigar and Spice, Streetcooker, By Horizon, OXIII, Ô Biev'Vin, CD Immobilier. Une liste en vrac où des noms prestigieux côtoient des clients locaux : <b>à trier</b> pour la cible cigare.</p>
+  <div class="num">10</div>
+</section>
+
+<!-- 11 · TECHNIQUE -->
+<section class="page">
+  <div class="k">10 — Technique, SEO, accessibilité</div>
+  <h2>Sous le capot</h2>
+  <table>
+    <tr><th>Point</th><th>Constat</th></tr>
+    <tr><td><b>Stack</b></td><td>HTML statique sur Apache, Bootstrap 5.1, jQuery 3.5, lightSlider, anime.js, Font Awesome 5. Réalisé par Loew-Tech.</td></tr>
+    <tr><td><b>Poids</b></td><td>Page Caves : <b>20,7 Mo</b>, 40 requêtes. Galuchat 3,5 Mo, visuels PNG de 2,5 Mo. Cible : moins de 2 Mo.</td></tr>
+    <tr><td><b>Images</b></td><td>PNG et JPEG bruts, noms avec espaces et accents, pas de WebP ni AVIF, pas de tailles adaptées au mobile.</td></tr>
+    <tr><td><b>CSS</b></td><td>8 fichiers, 5 145 lignes, aucune variable, @font-face déclaré 5 fois, une trentaine de règles @media incohérentes.</td></tr>
+    <tr><td><b>SEO</b></td><td>Titles et descriptions présents (bien), mais <b>13 balises H1</b> sur l'accueil, page Créations sans title, aucune donnée structurée.</td></tr>
+    <tr><td><b>Accessibilité</b></td><td>Textes alternatifs présents sauf 5 images de l'accueil ; contenu masqué tant que l'animation n'a pas joué ; pas de réglage « mouvement réduit ».</td></tr>
+    <tr><td><b>Mobile</b></td><td>Pas de débordement horizontal (bien), mais le titre du hero Caves disparaît et les bulles flottantes couvrent le contenu.</td></tr>
+    <tr><td><b>Légal</b></td><td>Page cookies en 404. Police commerciale auto-hébergée, licence à vérifier.</td></tr>
+  </table>
+  <div style="display:grid;grid-template-columns:30mm 1fr;gap:3mm;margin-top:3mm;align-items:start">
+    <img src="img/caves_mobile.jpg" style="height:50mm;object-fit:cover;object-position:top">
+    <p class="cap" style="margin:0">Caves sur mobile (375 px) : le titre « Caves à cigares » n'apparaît pas, il ne reste que le slogan et deux boutons posés sur la photo.</p>
+  </div>
+  <div class="num">11</div>
+</section>
+
+<!-- 12 · SUITE -->
+<section class="page dark">
+  <div class="k">11 — Ce que ça change pour la nouvelle charte</div>
+  <h2>Les fondations à poser</h2>
+  <ul>
+    <li><b>Un seul univers</b> : celui de la cave, pas de la maroquinerie en général.</li>
+    <li><b>Une palette resserrée</b> en variables : 1 noir, 1 sable, 1 or. Peut-être un cognac tiré du cuir, et c'est tout.</li>
+    <li><b>Un duo typographique libre</b> avec ses graisses : capitales gravées pour les titres, serif ou sans lisible pour le texte.</li>
+    <li><b>Un logo vectoriel</b> : monogramme redessiné et wordmark composé, avec zone de protection.</li>
+    <li><b>Des composants dessinés</b> : boutons, cartes matière, sélecteur de couleur, formulaire de rendez-vous.</li>
+    <li><b>Une direction photo</b> : vraies pièces, lumière rasante, macro cuir, mains.</li>
+    <li><b>Un mouvement lent</b>, mesuré, qui ne cache jamais le contenu.</li>
+  </ul>
+  <h3>Questions pour démarrer la charte</h3>
+  <ul>
+    <li>Nom officiel et tagline : « Maison Lemony » ? « L'art de préserver l'exception » ?</li>
+    <li>Le monogramme est-il intouchable, ou peut-on le redessiner ?</li>
+    <li>Trois adjectifs pour la marque, et un à éviter (« bling » ?).</li>
+    <li>Les supports : site seul, ou aussi print (brochure, cartes, plaques gravées), Instagram ?</li>
+  </ul>
+  <div class="num">12</div>
+</section>
+
+</body>
+</html>

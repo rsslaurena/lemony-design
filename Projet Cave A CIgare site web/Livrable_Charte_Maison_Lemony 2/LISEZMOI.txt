@@ -1,0 +1,17 @@
+MAISON LEMONY — Charte graphique v1.0 (Direction A · L'Établi) — Octobre 2026
+
+Charte_Graphique_Maison_Lemony.pdf   La charte complète (21 pages A4), à partager.
+charte.html                          La même charte en page web (polices chargées depuis Google Fonts).
+logos/logo.svg                       Logo complet, encre (couleur = currentColor).
+logos/logo-inverse.svg               Logo complet, version claire pour fond sombre.
+logos/mark.svg                       Monogramme seul (favicon, avatar, gravure).
+logos/monogramme-seul.svg            Tracé vectoriel brut du monogramme (source).
+logos/png/                           Logo en PNG 3000 px : sur papier, sur encre, et fonds transparents.
+web/tokens.css                       Couleurs, polices et rôles en variables CSS pour le site.
+web/brand.json                       Données sources de la charte (pour la régénérer).
+
+Avant impression ou gravure :
+- Convertir le texte du logo (LEMONY, MAISON · VIENNE) en contours dans Illustrator ou Figma.
+- Lisser les courbes du monogramme (environ 1 h), le tracé garde de petites ondulations de la gravure d'origine.
+
+Points à valider avec Sam : la signature « Fait de mes mains », le délai de réponse annoncé (48 h), le compte Instagram.
