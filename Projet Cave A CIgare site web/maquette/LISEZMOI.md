@@ -4,7 +4,9 @@ Maquette cliquable de tout le site (arborescence B), construite sur la charte «
 
 ## L'ouvrir
 
-Double-cliquer sur `index.html` suffit. Pour que le parcours Composer → Rendez-vous → Merci garde la composition d'une page à l'autre, préférer le petit serveur :
+En ligne : https://rsslaurena.github.io/lemony-design/ (publié à chaque push sur `main`).
+
+En local, les liens n'ont pas d'extension (`/composer`, `/la-maison`…), comme sur GitHub Pages : il faut donc le petit serveur, un double-clic sur `index.html` ne permet pas de naviguer.
 
 ```bash
 node maquette/_src/serve.js

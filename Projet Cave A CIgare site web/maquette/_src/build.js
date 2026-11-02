@@ -610,7 +610,11 @@ page('credits.html', {
 });
 
 // ------------------------------------------------------------------ écriture
-for (const [f, html] of Object.entries(pages)) fs.writeFileSync(path.join(ROOT, f), html);
+// Liens internes sans .html : GitHub Pages sert composer.html à l'adresse /composer
+const cleanLinks = html => html
+  .replace(/(href|action)="index\.html"/g, '$1="./"')
+  .replace(/(href|action)="([a-z0-9-]+)\.html(?=[#?"])/g, '$1="$2');
+for (const [f, html] of Object.entries(pages)) fs.writeFileSync(path.join(ROOT, f), cleanLinks(html));
 const DATA = { collections: COLLECTIONS, cuirs: CUIRS, tailles: TAILLES, bois: BOIS, metaux: METAUX, messages: MESSAGES, photos: Object.fromEntries(Object.entries(P).map(([k, v]) => [k, url(v[0], 160, 160)])) };
 fs.writeFileSync(path.join(ROOT, 'assets/js/data.js'), '// Généré par _src/build.js\nwindow.LEMONY = ' + JSON.stringify(DATA) + ';\n');
 console.log('pages :', Object.keys(pages).length, '· photos :', usedPhotos.size);

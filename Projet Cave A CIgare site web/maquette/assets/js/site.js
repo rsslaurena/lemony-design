@@ -162,7 +162,7 @@
         out.textContent = `Il manque encore : ${missing.map(i => ['la taille', 'le cuir', 'le coloris', 'le bois', 'le métal'][i]).join(', ')}.`;
         return;
       }
-      save(); location.href = 'rendez-vous.html?from=composer';
+      save(); location.href = 'rendez-vous?from=composer';
     });
 
     // État initial : cocher ce qui est déjà connu
@@ -199,13 +199,13 @@
     let context = '';
     if (compo && compoLines(compo).length) {
       const lines = compoLines(compo);
-      box.innerHTML = `<p class="mono">Votre composition</p><p>${lines.map(esc).join('<br>')}</p><a class="link-atelier" href="composer.html" style="align-self:start">Modifier</a>`;
+      box.innerHTML = `<p class="mono">Votre composition</p><p>${lines.map(esc).join('<br>')}</p><a class="link-atelier" href="composer" style="align-self:start">Modifier</a>`;
       area.value = `Bonjour Sam,\n\nVoici la cave que j'ai composée sur le site :\n${lines.map(l => '— ' + l).join('\n')}\n\nJ'aimerais en parler avec vous. La cave serait pour `;
       context = lines.join(' · ');
     } else if (coll && D.messages[coll]) {
       const isEd = coll === 'editions';
       const c = D.collections[isEd ? 'prestige' : coll];
-      box.innerHTML = `<p class="mono">${isEd ? 'Les éditions' : 'Collection ' + esc(c.name)}</p><p>${isEd ? 'Black, Carbone, Polar White, Shadow Blue · alligator' : esc(c.line)}</p><a class="link-atelier" href="composer.html?collection=${isEd ? 'prestige' : coll}" style="align-self:start">Composer dans cette collection</a>`;
+      box.innerHTML = `<p class="mono">${isEd ? 'Les éditions' : 'Collection ' + esc(c.name)}</p><p>${isEd ? 'Black, Carbone, Polar White, Shadow Blue · alligator' : esc(c.line)}</p><a class="link-atelier" href="composer?collection=${isEd ? 'prestige' : coll}" style="align-self:start">Composer dans cette collection</a>`;
       area.value = D.messages[coll];
       context = isEd ? 'Les éditions' : 'Collection ' + c.name;
     }
@@ -228,7 +228,7 @@
       if (!okFields || !consent.checked) { const first = $('.has-error input', rdv) || (!consent.checked && consent); first && first.focus(); return; }
       const fd = new FormData(rdv);
       store.set('lemony-sent', { nom: fd.get('nom'), contact: fd.get('contact'), pays: fd.get('pays'), projet: fd.get('projet'), context });
-      location.href = 'merci.html';
+      location.href = 'merci';
     });
   }
 
