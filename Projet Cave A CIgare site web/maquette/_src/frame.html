@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><title>Capture mobile</title>
+<style>html,body{margin:0;background:#fff}iframe{display:block;width:375px;border:0}</style></head>
+<body><iframe id="f"></iframe>
+<script>
+  // Affiche une page de la maquette dans un cadre de 375 px de large, à pleine hauteur
+  const q = new URLSearchParams(location.search), f = document.getElementById('f');
+  f.style.height = (q.get('h') || 8000) + 'px';
+  f.src = '../' + q.get('p') + (q.get('p').includes('?') ? '&' : '?') + 'capture';
+</script></body></html>

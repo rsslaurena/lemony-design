@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-31T15:00:00Z",
+  "title": "Design System: Maison Lemony",
+  "extensions": {
+    "colorMeta": {
+      "encre": { "role": "primary", "displayName": "Encre", "canonical": "oklch(22.1% 0.010 67.3)", "tonalRamp": ["#0C0B0A", "#282624", "#484441", "#6A6561", "#8D8884", "#B1ADAA", "#D3D0CE", "#F0EEEC"] },
+      "cognac": { "role": "secondary", "displayName": "Cognac (le crayon)", "canonical": "oklch(50.8% 0.093 51.8)", "tonalRamp": ["#140803", "#382010", "#613A22", "#8D5735", "#B07B5C", "#CDA48C", "#E8CAB9", "#FDEADF"] },
+      "papier": { "role": "neutral", "displayName": "Papier", "canonical": "oklch(95.0% 0.014 84.6)", "tonalRamp": ["#0C0B09", "#282623", "#48453F", "#6A665E", "#8D8981", "#B1AEA8", "#D3D1CC", "#F0EEEB"] },
+      "kraft": { "role": "neutral", "displayName": "Kraft", "canonical": "oklch(89.7% 0.025 83.4)", "tonalRamp": ["#0D0B08", "#292620", "#4A443A", "#6C6557", "#8F887B", "#B3ADA3", "#D4D0C9", "#F1EEE9"] },
+      "filet": { "role": "neutral", "displayName": "Filet", "canonical": "oklch(82.3% 0.032 84.6)", "tonalRamp": ["#0D0B07", "#2A261E", "#4B4437", "#6E6553", "#918877", "#B4ADA0", "#D5D0C7", "#F1EEE8"] },
+      "mine": { "role": "neutral", "displayName": "Mine de plomb", "canonical": "oklch(46.6% 0.027 78.0)", "tonalRamp": ["#0D0B08", "#2A261F", "#4B443A", "#6E6556", "#91887A", "#B4ADA2", "#D5D0C9", "#F1EEE9"] },
+      "danger": { "role": "error", "displayName": "Danger (assombri)", "canonical": "oklch(49.5% 0.155 26.9)", "tonalRamp": ["#1A0403", "#451411", "#752723", "#A93D36", "#CD665C", "#E6968C", "#FBC1B9", "#FFE4DF"] },
+      "footer-rule": { "role": "neutral", "displayName": "Filet de nuit", "canonical": "oklch(32.6% 0.017 70.9)", "tonalRamp": ["#0C0B09", "#292622", "#49443E", "#6C655D", "#8F8880", "#B2ADA7", "#D4D0CC", "#F0EEEB"] },
+      "footer-muted": { "role": "neutral", "displayName": "Mine de nuit", "canonical": "oklch(75.4% 0.032 83.6)", "tonalRamp": ["#0D0B07", "#2A261E", "#4B4437", "#6E6553", "#918877", "#B4ADA0", "#D5D0C7", "#F1EEE8"] }
+    },
+    "typographyMeta": {
+      "display-xl": { "displayName": "Display XL", "purpose": "Home hero headline only." },
+      "display-l": { "displayName": "Display L", "purpose": "Section headings and inner page titles." },
+      "title-m": { "displayName": "Title M", "purpose": "Sub-section, step and timeline headings." },
+      "voix": { "displayName": "Voix de Sam", "purpose": "Italic, Sam's real quotations only, signed with the mark." },
+      "lead": { "displayName": "Lead", "purpose": "Two-line introduction under a page title, max 36em." },
+      "body": { "displayName": "Body", "purpose": "Running text, 19px floor, old-style figures, max 34em." },
+      "label": { "displayName": "Label", "purpose": "Uppercase mono for buttons, nav, tabs, field labels, atelier link. 11.5px floor." },
+      "caption-mono": { "displayName": "Caption mono", "purpose": "Uppercase mono captions in mine: materials, swatch codes, fiche sub-values." },
+      "note": { "displayName": "Note", "purpose": "Sentence-case mono for hints, fiche footnotes and mockup annotations." },
+      "measure": { "displayName": "Measure", "purpose": "Numeric spec cells, lining tabular figures." }
+    },
+    "shadows": [
+      { "name": "sample-edge", "value": "inset 0 0 0 1px rgba(30, 26, 22, .15)", "purpose": "Hairline ring around round colour and metal samples so pale swatches keep an edge (0.18 on metal discs)." },
+      { "name": "selected-ring", "value": "inset 0 0 0 1px #1E1A16", "purpose": "Doubles the encre border of a checked choice card. Not elevation." },
+      { "name": "focus-underline", "value": "0 1px 0 0 #8F5530", "purpose": "Thickens a focused field underline to 2px cognac." }
+    ],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(.16, 1, .3, 1)", "purpose": "System ease for every state and reveal transition." },
+      { "name": "reveal", "value": "opacity .9s, translateY(12px) to 0 .9s", "purpose": "Text and blocks settle on scroll (start opacity .35)." },
+      { "name": "cote-draw", "value": "scaleX 0 to 1, .9s, .1s delay; labels fade .6s, .7s delay", "purpose": "Dimension lines draw left to right on entering the viewport." },
+      { "name": "photo-breathe", "value": "scale 1 to 1.04, 6s cubic-bezier(.25, .1, .25, 1)", "purpose": "Slow zoom on large photographs." },
+      { "name": "ink", "value": "color cognac to encre, .9s", "purpose": "A newly set fiche value flashes in pencil then settles to ink." },
+      { "name": "state", "value": ".35s", "purpose": "Button background, color and border changes." },
+      { "name": "reduced-motion", "value": "all transitions .01ms; reveals, cotes and zoom shown at rest", "purpose": "prefers-reduced-motion: reduce." }
+    ],
+    "breakpoints": [
+      { "name": "form", "value": "640px" },
+      { "name": "compact", "value": "760px" },
+      { "name": "split", "value": "860px" },
+      { "name": "header", "value": "960px" },
+      { "name": "page-max", "value": "1360px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "One per screen. Site-wide it reads \"Composer ma cave\". Encre fill, turns cognac on hover.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Composer ma cave <svg class=\"ds-arrow\" viewBox=\"0 0 18 9\" aria-hidden=\"true\"><path d=\"M0 4.5h16.5M13 1l3.5 3.5L13 8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\"/></svg></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 12px; font: 500 11.5px/1 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: .18em; text-transform: uppercase; padding: 17px 26px; border: 1px solid transparent; border-radius: 0; text-decoration: none; cursor: pointer; white-space: nowrap; transition: background-color .35s cubic-bezier(.16,1,.3,1), color .35s cubic-bezier(.16,1,.3,1), border-color .35s cubic-bezier(.16,1,.3,1); } .ds-btn-primary { background: #1E1A16; color: #F3EEE4; } .ds-btn-primary:hover { background: #8F5530; } .ds-btn:focus-visible { outline: 2px solid #8F5530; outline-offset: 3px; } .ds-arrow { width: 18px; height: 9px; flex: none; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined encre, fills kraft on hover.",
+      "html": "<a class=\"ds-btn2\" href=\"#\">Voir les matières</a>",
+      "css": ".ds-btn2 { display: inline-flex; align-items: center; gap: 12px; font: 500 11.5px/1 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: .18em; text-transform: uppercase; padding: 17px 26px; background: transparent; color: #1E1A16; border: 1px solid #1E1A16; border-radius: 0; text-decoration: none; transition: background-color .35s cubic-bezier(.16,1,.3,1); } .ds-btn2:hover { background: #E5DCCB; } .ds-btn2:focus-visible { outline: 2px solid #8F5530; outline-offset: 3px; }"
+    },
+    {
+      "name": "Atelier Link",
+      "kind": "button",
+      "refersTo": "link-atelier",
+      "description": "Tertiary action: mono label underlined by a cognac rule. \"Prendre rendez-vous\", section-head links.",
+      "html": "<a class=\"ds-link-atelier\" href=\"#\">Prendre rendez-vous</a>",
+      "css": ".ds-link-atelier { display: inline-flex; align-items: center; gap: 10px; font: 500 11.5px/1 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: .18em; text-transform: uppercase; color: #1E1A16; text-decoration: none; padding: 14px 0 7px; border-bottom: 1px solid #8F5530; transition: color .3s; } .ds-link-atelier:hover { color: #8F5530; } .ds-link-atelier:focus-visible { outline: 2px solid #8F5530; outline-offset: 3px; }"
+    },
+    {
+      "name": "Field",
+      "kind": "input",
+      "refersTo": "field-input",
+      "description": "Underline-only field with a mono label; the underline turns cognac on focus.",
+      "html": "<label class=\"ds-field\"><span>Votre nom</span><input type=\"text\" placeholder=\"Prénom et nom\"></label>",
+      "css": ".ds-field { display: block; margin-bottom: 30px; background: #F3EEE4; } .ds-field > span { display: block; font: 400 11.5px/1.4 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: .18em; text-transform: uppercase; color: #625849; margin-bottom: 4px; } .ds-field input { width: 100%; background: transparent; border: 0; border-bottom: 1px solid #1E1A16; border-radius: 0; padding: 8px 0 10px; font: 500 21px 'Cormorant Garamond', Georgia, serif; color: #1E1A16; } .ds-field input::placeholder { color: #625849; opacity: 1; font-weight: 400; } .ds-field input:focus { outline: none; border-bottom-color: #8F5530; box-shadow: 0 1px 0 0 #8F5530; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Slim papier header: mono label links, current page underlined in cognac.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Composer ma cave</a><a href=\"#\">Matières</a><a href=\"#\">La Maison</a><a href=\"#\">Rendez-vous</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 34px; background: #F3EEE4; padding: 24px; } .ds-nav a { font: 500 11.5px/1 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: .18em; text-transform: uppercase; text-decoration: none; color: #1E1A16; padding: 10px 0; border-bottom: 1px solid transparent; } .ds-nav a:hover { color: #8F5530; } .ds-nav a[aria-current=\"page\"] { border-bottom-color: #8F5530; } .ds-nav a:focus-visible { outline: 2px solid #8F5530; outline-offset: 3px; }"
+    },
+    {
+      "name": "Choice Card",
+      "kind": "card",
+      "refersTo": "choice-card",
+      "description": "Composer option: sample disc, name, mono caption, round tick. Encre border and ring when checked.",
+      "html": "<label class=\"ds-choice\"><input type=\"radio\" name=\"m\" checked><i class=\"ds-chip\" style=\"--c:#C9A86A\"></i><span><b>Doré poli</b><small>Charnières et fermoir</small></span><span class=\"ds-tick\"></span></label>",
+      "css": ".ds-choice { position: relative; display: grid; grid-template-columns: auto minmax(0,1fr) auto; gap: 18px; align-items: center; padding: 16px 18px; border: 1px solid #CFC4AE; background: #F3EEE4; cursor: pointer; transition: border-color .3s cubic-bezier(.16,1,.3,1); font-family: 'Cormorant Garamond', Georgia, serif; color: #1E1A16; } .ds-choice:hover { border-color: #625849; } .ds-choice input { position: absolute; opacity: 0; } .ds-choice:has(input:checked) { border-color: #1E1A16; box-shadow: inset 0 0 0 1px #1E1A16; } .ds-choice:has(input:focus-visible) { outline: 2px solid #8F5530; outline-offset: 3px; } .ds-chip { width: 46px; height: 46px; border-radius: 50%; background: var(--c); box-shadow: inset 0 0 0 1px rgba(30,26,22,.15); } .ds-choice b { display: block; font-weight: 500; font-size: 22px; line-height: 1.15; } .ds-choice small { display: block; font: 400 11.5px/1.5 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: .04em; text-transform: uppercase; color: #625849; margin-top: 4px; } .ds-tick { width: 20px; height: 20px; border: 1px solid #625849; border-radius: 50%; display: grid; place-items: center; } .ds-tick::after { content: ''; width: 10px; height: 10px; border-radius: 50%; background: #1E1A16; transform: scale(0); transition: transform .3s cubic-bezier(.16,1,.3,1); } .ds-choice:has(input:checked) .ds-tick { border-color: #1E1A16; } .ds-choice:has(input:checked) .ds-tick::after { transform: scale(1); }"
+    },
+    {
+      "name": "Cote",
+      "kind": "custom",
+      "refersTo": "cote",
+      "description": "Signature dimension line with end ticks in cognac, mono text either side; draws left to right on scroll.",
+      "html": "<div class=\"ds-cote\"><span>8 à 10 semaines d'atelier</span><i></i><span>une dizaine de pièces par mois</span></div>",
+      "css": ".ds-cote { display: flex; align-items: center; gap: 12px; font: 400 11.5px/1.3 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; color: #8F5530; background: #F3EEE4; padding: 16px; } .ds-cote i { flex: 1; height: 1px; background: #8F5530; position: relative; min-width: 24px; transform-origin: left; transition: transform .9s cubic-bezier(.16,1,.3,1); } .ds-cote i::before, .ds-cote i::after { content: ''; position: absolute; top: -4px; width: 1px; height: 9px; background: #8F5530; } .ds-cote i::before { left: 0; } .ds-cote i::after { right: 0; }"
+    },
+    {
+      "name": "Fiche de pièce",
+      "kind": "card",
+      "refersTo": "fiche",
+      "description": "Signature composer summary: encre frame, mono labels, Cormorant values, cognac piece number, primary button.",
+      "html": "<aside class=\"ds-fiche\"><div class=\"ds-fiche-head\"><h2>Votre pièce</h2><span class=\"ds-num\">N° à attribuer</span></div><dl><div class=\"ds-row\"><dt>Taille</dt><dd>100 cigares</dd></div><div class=\"ds-row\"><dt>Cuir</dt><dd>Alligator<span class=\"ds-sub\">Prestige</span></dd></div><div class=\"ds-row\"><dt>Bois</dt><dd class=\"ds-empty\">À choisir</dd></div></dl><a class=\"ds-fiche-btn\" href=\"#\">Envoyer à Sam</a></aside>",
+      "css": ".ds-fiche { background: #F3EEE4; border: 1px solid #1E1A16; padding: 28px 28px 24px; max-width: 420px; font-family: 'Cormorant Garamond', Georgia, serif; color: #1E1A16; } .ds-fiche-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-bottom: 16px; border-bottom: 1px solid #1E1A16; } .ds-fiche-head h2 { font-size: 30px; line-height: 1; font-weight: 500; margin: 0; } .ds-num { font: 500 11.5px/1 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: .22em; text-transform: uppercase; color: #8F5530; } .ds-fiche dl { margin: 0; } .ds-row { display: grid; grid-template-columns: 92px minmax(0,1fr); gap: 14px; padding: 13px 0 12px; border-bottom: 1px solid #CFC4AE; align-items: baseline; } .ds-row dt { font: 400 11.5px/1.4 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: .12em; text-transform: uppercase; color: #625849; } .ds-row dd { margin: 0; font-size: 20px; line-height: 1.25; } .ds-empty { color: #625849; } .ds-sub { display: block; font: 400 11.5px/1.5 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: .06em; text-transform: uppercase; color: #625849; margin-top: 3px; } .ds-fiche-btn { display: flex; justify-content: center; margin-top: 20px; padding: 17px 26px; background: #1E1A16; color: #F3EEE4; font: 500 11.5px/1 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: .18em; text-transform: uppercase; text-decoration: none; transition: background-color .35s cubic-bezier(.16,1,.3,1); } .ds-fiche-btn:hover { background: #8F5530; } .ds-fiche-btn:focus-visible { outline: 2px solid #8F5530; outline-offset: 3px; }"
+    },
+    {
+      "name": "Index List",
+      "kind": "custom",
+      "refersTo": "index-list",
+      "description": "Ruled collection list: encre top rule, filet rows, large Cormorant names, mono materials, cognac arrow that slides on hover.",
+      "html": "<ul class=\"ds-index\"><li><a href=\"#\"><span class=\"ds-name\">Héritage</span><span class=\"ds-mono\">Veau, bovin, agneau, chèvre</span><svg class=\"ds-out\" viewBox=\"0 0 30 12\" aria-hidden=\"true\"><path d=\"M0 6h28M23 1l5 5-5 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\"/></svg></a></li><li><a href=\"#\"><span class=\"ds-name\">Prestige</span><span class=\"ds-mono\">Alligator porosus, niloticus</span><svg class=\"ds-out\" viewBox=\"0 0 30 12\" aria-hidden=\"true\"><path d=\"M0 6h28M23 1l5 5-5 5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\"/></svg></a></li></ul>",
+      "css": ".ds-index { list-style: none; margin: 0; padding: 0 16px; border-top: 1px solid #1E1A16; background: #F3EEE4; } .ds-index li { border-bottom: 1px solid #CFC4AE; } .ds-index a { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,1.2fr) auto; align-items: baseline; gap: 24px; padding: 30px 0 28px; text-decoration: none; color: #1E1A16; transition: padding .5s cubic-bezier(.16,1,.3,1); } .ds-index a:hover, .ds-index a:focus-visible { padding-left: 18px; } .ds-index a:focus-visible { outline: 2px solid #8F5530; outline-offset: 3px; } .ds-name { font: 500 48px/1 'Cormorant Garamond', Georgia, serif; } .ds-mono { font: 400 12px/1.6 'IBM Plex Mono', ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; color: #625849; } .ds-out { width: 30px; height: 12px; color: #8F5530; transition: transform .5s cubic-bezier(.16,1,.3,1); } .ds-index a:hover .ds-out { transform: translateX(6px); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Le Carnet d'atelier",
+    "overview": "The site is Sam's workshop notebook, not a showroom. Everything sits on daylight paper (papier), written in ink (encre), with kraft for the surfaces a hand would pin a sample to and filet hairlines for the ruled grid of the page. Cognac is the pencil: it draws the cotes, numbers the pieces, writes the annotations, and nothing else. The world derives from the binding charte « Direction A · L'Établi » v1.0 (`Livrable_Charte_Maison_Lemony/web/tokens.css`); the build is the normative record where it departs.\n\nThe voice is Cormorant Garamond at a generous reading size (19px, weight 500, old-style figures), set against IBM Plex Mono for everything that measures, labels or acts. Layout is airy and editorial: wide sections, asymmetric two-column splits, real daylight photographs bleeding off one edge of the page, and long ruled lists in place of card grids. Depth is flat paper; structure comes from rules, not shadows. Motion is slow and quiet: text settles up 12px, cotes draw left to right, large photos breathe toward 1.04.\n\nThe category's dark-club humidor page and the e-commerce product configurator are the confirmed rejections. Nothing is bought here: buttons lead to a composition or a conversation, never to a cart or a price.",
+    "keyCharacteristics": [
+      "Papier ground, encre text and primary action, kraft surfaces, filet hairlines, cognac only as the annotating pencil.",
+      "Cormorant for voice, Plex Mono for measures, labels and buttons; italic reserved for Sam's real words.",
+      "The cote (dimension line with end ticks) is the recurring graphic, drawn on scroll.",
+      "Square corners everywhere; circles only for physical samples (metal finishes, colour chips, radio ticks).",
+      "Flat paper: hairline rules and tonal kraft fields instead of shadows.",
+      "Real daylight photography, full-bleed to one page edge; missing shots shown as honest dashed placeholders."
+    ],
+    "rules": [
+      { "name": "The Pencil Rule", "body": "Cognac annotates: cotes, numbers, notes, hover, focus. It never fills a section, a card or a button at rest.", "section": "colors" },
+      { "name": "The Hairline Rule", "body": "Filet draws lines and borders and nothing else; it never sets text on papier.", "section": "colors" },
+      { "name": "The Measure Rule", "body": "Anything that is a dimension, a count, a code or an action is mono; anything that is a sentence is Cormorant.", "section": "typography" },
+      { "name": "The Label Floor Rule", "body": "Mono text is never set below 11.5px. The only exception is the logo lockup's tagline, which belongs to the logo artwork.", "section": "typography" },
+      { "name": "The Real Voice Rule", "body": "Italic is Sam's quoted voice, never decoration and never invented.", "section": "typography" },
+      { "name": "The Flat Paper Rule", "body": "Nothing floats. State is shown by a heavier rule, a filled tick or a colour change, never by lifting a surface.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** keep papier as the page ground and encre for text and the single primary button per screen.",
+      "**Do** reserve cognac for cotes, piece numbers, annotations, hover and focus (The Pencil Rule).",
+      "**Do** set every measure, code, label and action in IBM Plex Mono at 11.5px or larger, and every sentence in Cormorant at 19px or larger.",
+      "**Do** draw structure with 1px rules: an encre rule to open a list, filet rules between entries.",
+      "**Do** use the cote with end ticks as the recurring graphic, drawn left to right on scroll.",
+      "**Do** show sizes as dimensioned front elevations and colours as indicative samples.",
+      "**Do** move with the system ease `cubic-bezier(.16, 1, .3, 1)`: fade and 12px rise over 0.9s, and drop every transition under reduced motion.",
+      "**Do** mark missing photographs honestly with the dashed \"à photographier\" placeholder."
+    ],
+    "donts": [
+      "**Don't** fill a section, card or resting button with cognac.",
+      "**Don't** use filet for text.",
+      "**Don't** round corners on rectangles or add drop shadows; circles are for physical samples only.",
+      "**Don't** use italic except for Sam's real quotations.",
+      "**Don't** build a shop picker or configurator chrome: no prices, carts, \"Acheter\", \"Ajouter au panier\" or \"Voir le prix\" anywhere in the UI.",
+      "**Don't** turn the site into a dark-club humidor page; encre is a ground only for the footer.",
+      "**Don't** put photo credit captions under images; credits live on the credits page.",
+      "**Don't** use renders or AI-generated imagery in place of the workshop photographs."
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+
+# Captures de relecture et cache locaux d'Impeccable (régénérables, volumineux)
+**/.impeccable/review/
+**/.impeccable/hook.cache.json
+**/.impeccable/questions/
+**/.impeccable/config.local.json
+
+# Réglages locaux de Claude Code
+**/.claude/settings.local.json

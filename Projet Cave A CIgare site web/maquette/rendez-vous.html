@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rendez-vous · Écrire à Sam · Maison Lemony</title>
+<meta name="description" content="Écrivez à Samuel Basmadjian pour parler de votre cave à cigares. Réponse sous 48 heures.">
+<meta name="theme-color" content="#F3EEE4">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preload" href="assets/fonts/cormorantgaramond-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/site.css">
+<script>document.documentElement.classList.replace('no-js','js')</script>
+</head>
+<body data-page="rendez-vous">
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Maison Lemony, accueil"><img src="assets/img/mark.svg" alt="" width="22" height="40"><span class="logo-text"><b>LEMONY</b><small>MAISON · VIENNE</small></span></a>
+    <nav class="nav" aria-label="Navigation principale"><a href="matieres.html">Matières</a><a href="la-maison.html">La Maison</a><a href="rendez-vous.html" aria-current="page">Rendez-vous</a></nav>
+    <div class="lang"><b aria-current="true">FR</b><span>·</span><span aria-disabled="true" title="Version anglaise à venir">EN</span></div>
+    <a class="btn btn-secondary header-cta" href="composer.html">Composer ma cave</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="menu-mobile">
+  <nav aria-label="Navigation mobile"><a href="composer.html">Composer ma cave</a><a href="matieres.html">Matières</a><a href="la-maison.html">La Maison</a><a href="rendez-vous.html" aria-current="page">Rendez-vous</a></nav>
+  <div class="mm-foot">
+    <a class="btn btn-primary" href="composer.html">Composer ma cave <svg class="arrow" viewBox="0 0 18 9" aria-hidden="true"><path d="M0 4.5h16.5M13 1l3.5 3.5L13 8" fill="none" stroke="currentColor" stroke-width="1.1"/></svg></a>
+    <a class="btn btn-secondary" href="tel:+33617528559">Appeler Sam</a>
+    <p class="mono">FR · EN (à venir)</p>
+  </div>
+</div>
+<main id="contenu">
+
+<section class="wrap page-head">
+  <nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span>/</span><span aria-current="page" style="margin:0;color:var(--encre)">Rendez-vous</span></nav>
+  <h1 class="display-xl">Chaque pièce naît d'une conversation.</h1>
+  <p class="lead">Écrivez à Sam : il vous répond lui-même sous 48 heures, puis vous convenez d'un rendez-vous en visio, à l'atelier ou chez vous.</p>
+</section>
+<div class="wrap rdv">
+  <form id="rdv" action="merci.html" novalidate>
+    <div class="context-box" data-context hidden></div>
+    <div class="form-grid">
+      <label class="field"><span>Votre nom</span><input name="nom" autocomplete="name" required placeholder="Jean Martin"><em class="err">Indiquez votre nom pour que Sam sache à qui il répond.</em></label>
+      <label class="field"><span>Email ou téléphone</span><input name="contact" autocomplete="email" required placeholder="vous@exemple.fr ou +33 6…"><em class="err">Laissez un email ou un numéro où Sam peut vous joindre.</em></label>
+      <label class="field full"><span>Pays</span><select name="pays" autocomplete="country-name"><option>France</option><option>Suisse</option><option>Monaco</option><option>Belgique</option><option>Luxembourg</option><option>Royaume-Uni</option><option>États-Unis</option><option>Émirats arabes unis</option><option>Autre pays</option></select></label>
+      <label class="field full"><span>Votre projet</span><textarea name="projet" rows="9" placeholder="Une cave de 150 cigares en porosus, pour un anniversaire en juin…"></textarea><em class="hint" data-hint>Un mot sur votre projet suffit : la taille, une peau, une date, une occasion.</em></label>
+    </div>
+    <label class="consent"><input type="checkbox" name="consent" required><span>J'accepte que Maison Lemony utilise ces informations pour me répondre au sujet de cette demande, et pour rien d'autre.</span></label>
+    <p class="err" data-consent-err hidden style="font:500 11px/1.5 var(--font-mono);color:var(--danger);margin:-20px 0 24px">Cochez la case pour que Sam puisse vous répondre.</p>
+    <button class="btn btn-primary" type="submit">Envoyer ma demande à Sam <svg class="arrow" viewBox="0 0 18 9" aria-hidden="true"><path d="M0 4.5h16.5M13 1l3.5 3.5L13 8" fill="none" stroke="currentColor" stroke-width="1.1"/></svg></button>
+    <p class="note"><b>À valider</b> « réponse sous 48 heures » à confirmer avec Sam</p>
+  </form>
+  <aside class="aside-sam" aria-labelledby="sam-t">
+    <div class="to-shoot" style="aspect-ratio:4/5">Portrait de Sam à l'établi<br>photo à produire</div>
+    <h2 id="sam-t" style="margin-top:28px">Vous écrivez à Sam, pas à un service client.</h2>
+    <dl class="contact-lines">
+      <div><dt>Téléphone direct</dt><dd><a href="tel:+33617528559">+33 6 17 52 85 59</a></dd></div>
+      <div><dt>Email</dt><dd><a href="mailto:sam@lemony-design.com">sam@lemony-design.com</a></dd></div>
+      <div><dt>Atelier</dt><dd>Vienne (38200), sur rendez-vous</dd></div>
+      <div><dt>Rendez-vous</dt><dd>En visio, à l'atelier, ou chez vous</dd></div>
+    </dl>
+  </aside>
+</div>
+<section class="wrap section" aria-labelledby="faq-t">
+  <h2 class="display-l" id="faq-t" style="margin-bottom:32px">Avant d'écrire</h2>
+  <div class="faq">
+    <details><summary>Combien de temps faut-il pour fabriquer une cave ?</summary><div><p>Huit à dix semaines d'atelier, à partir du moment où la composition et le prix sont convenus avec Sam. L'atelier ne fabrique qu'une dizaine de pièces par mois.</p></div></details>
+    <details><summary>Combien coûte une cave ?</summary><div><p>Le prix dépend de la peau, du format et des finitions. Il se fixe avec Sam, après votre échange : aucun prix n'est affiché sur le site.</p></div></details>
+    <details><summary>Livrez-vous à l'étranger ?</summary><div><p>Oui. Les peaux exotiques voyagent avec leurs documents CITES, que l'atelier prépare avec la pièce.</p><p class="note"><b>À valider</b> pays desservis et formalités exactes</p></div></details>
+    <details><summary>Puis-je voir et toucher les peaux avant de décider ?</summary><div><p>À l'atelier de Vienne, sur rendez-vous. À distance, Sam vous montre les peaux en visio.</p></div></details>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand"><img src="assets/img/mark-papier.svg" alt="" width="30" height="56"><p>Caves à cigares sur mesure, en cuirs précieux. Faites à la main à Vienne.</p></div>
+      <div class="foot-col"><h2>L'atelier</h2><ul><li>Vienne (38200)</li><li>Sur rendez-vous</li><li><a href="tel:+33617528559">+33 6 17 52 85 59</a></li><li><a href="mailto:sam@lemony-design.com">sam@lemony-design.com</a></li></ul></div>
+      <div class="foot-col"><h2>Le site</h2><ul><li><a href="composer.html">Composer ma cave</a></li><li><a href="matieres.html">Matières</a></li><li><a href="la-maison.html">La Maison</a></li><li><a href="rendez-vous.html">Rendez-vous</a></li></ul></div>
+      <div class="foot-col"><h2>Services</h2><ul><li><a href="entretien-garantie.html">Entretien &amp; garantie</a></li><li><a href="entretien-garantie.html#cites">CITES &amp; export</a></li><li><a href="entretien-garantie.html#livraison">Livraison &amp; délais</a></li><li><a href="credits.html">Crédits photos</a></li></ul></div>
+    </div>
+    <div class="foot-bottom"><span>© Maison Lemony · Samuel Basmadjian, Maître artisan d'art · Fait main en France</span><span>Maquette · octobre 2026 · Mentions légales · Cookies</span></div>
+  </div>
+</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

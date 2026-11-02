@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1166" viewBox="0 0 1600 1166">
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a1a1a"/></marker></defs>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="30" y="48" font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#1a1a1a" text-anchor="start" font-weight="bold"><tspan x="30" dy="0">Option A — Le salon classique</tspan></text>
+<text x="30" y="76" font-family="Arial, Helvetica, sans-serif" font-size="14.5" fill="#8a8a8a" text-anchor="start" font-weight="normal"><tspan x="30" dy="0">Une rubrique par sujet. Reprend l'arborescence de départ de la fiche d'immersion.</tspan></text>
+<text x="1570" y="30" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#8a8a8a" text-anchor="end" font-weight="normal" letter-spacing="1"><tspan x="1570" dy="0">MAISON LEMONY · ARBORESCENCE · WIREFRAME BASSE FIDÉLITÉ · OCT. 2026</tspan></text>
+<text x="1570" y="50" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#8a8a8a" text-anchor="end" font-weight="normal"><tspan x="1570" dy="0">7 rubriques · 1 action principale : « Rendez-vous privé »</tspan></text>
+<rect x="445" y="108" width="180" height="40" rx="3" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="535" y="133.4" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" text-anchor="middle" font-weight="bold"><tspan x="535" dy="0">Accueil</tspan></text>
+<line x1="535" y1="148" x2="535" y2="178" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="97" y1="178" x2="976.5999999999999" y2="178" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="97" y1="178" x2="97" y2="198" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="243.6" y1="178" x2="243.6" y2="198" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="390.2" y1="178" x2="390.2" y2="198" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="536.8" y1="178" x2="536.8" y2="198" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="683.4" y1="178" x2="683.4" y2="198" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="830" y1="178" x2="830" y2="198" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="976.5999999999999" y1="178" x2="976.5999999999999" y2="198" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="30" y="198" width="134" height="46" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="2.2"/>
+<text x="97" y="226.04" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold"><tspan x="97" dy="0">La Maison</tspan></text>
+<rect x="52" y="256" width="112" height="28" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="108" y="274.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="108" dy="0">Sam Basmadjian</tspan></text>
+<line x1="40" y1="270" x2="52" y2="270" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="52" y="292" width="112" height="28" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="108" y="310.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="108" dy="0">Héritage tannerie</tspan></text>
+<line x1="40" y1="306" x2="52" y2="306" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="52" y="328" width="112" height="46" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="108" y="347.82" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="108" dy="0">Hermès &amp; Maître</tspan><tspan x="108" dy="15">Artisan d'Art</tspan></text>
+<line x1="40" y1="351" x2="52" y2="351" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="52" y="382" width="112" height="28" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="108" y="400.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="108" dy="0">L'atelier à Vienne</tspan></text>
+<line x1="40" y1="396" x2="52" y2="396" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="52" y="418" width="112" height="28" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="108" y="436.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="108" dy="0">Presse</tspan></text>
+<line x1="40" y1="432" x2="52" y2="432" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="40" y1="244" x2="40" y2="432" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="176.6" y="198" width="134" height="46" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="2.2"/>
+<text x="243.6" y="226.04" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold"><tspan x="243.6" dy="0">Collections</tspan></text>
+<rect x="198.6" y="256" width="112" height="28" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="254.6" y="274.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="254.6" dy="0">Héritage</tspan></text>
+<line x1="186.6" y1="270" x2="198.6" y2="270" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="198.6" y="292" width="112" height="28" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="254.6" y="310.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="254.6" dy="0">Élégance</tspan></text>
+<line x1="186.6" y1="306" x2="198.6" y2="306" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="198.6" y="328" width="112" height="28" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="254.6" y="346.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="254.6" dy="0">Excellence</tspan></text>
+<line x1="186.6" y1="342" x2="198.6" y2="342" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="198.6" y="364" width="112" height="28" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="254.6" y="382.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="254.6" dy="0">Prestige</tspan></text>
+<line x1="186.6" y1="378" x2="198.6" y2="378" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="198.6" y="400" width="112" height="46" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="254.6" y="419.82" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="254.6" dy="0">Éditions</tspan><tspan x="254.6" dy="15">(Black, Carbone…)</tspan></text>
+<line x1="186.6" y1="423" x2="198.6" y2="423" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="198.6" y="454" width="112" height="46" rx="3" fill="#ececec" stroke="#8a8a8a" stroke-width="1.1" stroke-dasharray="4 3"/>
+<text x="254.6" y="473.9525" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="italic"><tspan x="254.6" dy="0">Fiche d'une cave</tspan><tspan x="254.6" dy="14.375">(×n)</tspan></text>
+<line x1="186.6" y1="477" x2="198.6" y2="477" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="186.6" y1="244" x2="186.6" y2="477" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="323.2" y="198" width="134" height="46" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="2.2"/>
+<text x="390.2" y="226.04" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold"><tspan x="390.2" dy="0">Savoir-faire</tspan></text>
+<rect x="345.2" y="256" width="112" height="28" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="401.2" y="274.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="401.2" dy="0">Les cuirs</tspan></text>
+<line x1="333.2" y1="270" x2="345.2" y2="270" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="345.2" y="292" width="112" height="46" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="401.2" y="311.82" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="401.2" dy="0">Les essences</tspan><tspan x="401.2" dy="15">de bois</tspan></text>
+<line x1="333.2" y1="315" x2="345.2" y2="315" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="345.2" y="346" width="112" height="46" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="401.2" y="365.82" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="401.2" dy="0">Instruments</tspan><tspan x="401.2" dy="15">LEM-01 · ACPL-01</tspan></text>
+<line x1="333.2" y1="369" x2="345.2" y2="369" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="345.2" y="400" width="112" height="28" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="401.2" y="418.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="401.2" dy="0">Les gestes</tspan></text>
+<line x1="333.2" y1="414" x2="345.2" y2="414" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="333.2" y1="244" x2="333.2" y2="414" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="469.79999999999995" y="198" width="134" height="46" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="2.2"/>
+<text x="536.8" y="226.04" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold"><tspan x="536.8" dy="0">Sur-mesure</tspan></text>
+<rect x="491.79999999999995" y="256" width="112" height="46" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="547.8" y="275.82" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="547.8" dy="0">Le process</tspan><tspan x="547.8" dy="15">en 4 temps</tspan></text>
+<line x1="479.79999999999995" y1="279" x2="491.79999999999995" y2="279" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="491.79999999999995" y="310" width="112" height="28" rx="3" fill="#fff" stroke="#c62828" stroke-width="1.4" stroke-dasharray="5 3"/>
+<text x="547.8" y="328.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#c62828" text-anchor="middle" font-weight="normal"><tspan x="547.8" dy="0">Configurateur ?</tspan></text>
+<line x1="479.79999999999995" y1="324" x2="491.79999999999995" y2="324" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="491.79999999999995" y="346" width="112" height="46" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="547.8" y="365.82" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="547.8" dy="0">Gravure</tspan><tspan x="547.8" dy="15">&amp; marquage</tspan></text>
+<line x1="479.79999999999995" y1="369" x2="491.79999999999995" y2="369" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="479.79999999999995" y1="244" x2="479.79999999999995" y2="369" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="616.4" y="198" width="134" height="46" rx="3" fill="#fff" stroke="#c62828" stroke-width="2.2" stroke-dasharray="6 3"/>
+<text x="683.4" y="226.04" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#c62828" text-anchor="middle" font-weight="bold"><tspan x="683.4" dy="0">Accessoires ?</tspan></text>
+<rect x="638.4" y="256" width="112" height="28" rx="3" fill="#fff" stroke="#c62828" stroke-width="1.4" stroke-dasharray="5 3"/>
+<text x="694.4" y="274.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#c62828" text-anchor="middle" font-weight="normal"><tspan x="694.4" dy="0">Étuis</tspan></text>
+<line x1="626.4" y1="270" x2="638.4" y2="270" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="638.4" y="292" width="112" height="28" rx="3" fill="#fff" stroke="#c62828" stroke-width="1.4" stroke-dasharray="5 3"/>
+<text x="694.4" y="310.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#c62828" text-anchor="middle" font-weight="normal"><tspan x="694.4" dy="0">Flasques</tspan></text>
+<line x1="626.4" y1="306" x2="638.4" y2="306" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="638.4" y="328" width="112" height="28" rx="3" fill="#fff" stroke="#c62828" stroke-width="1.4" stroke-dasharray="5 3"/>
+<text x="694.4" y="346.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#c62828" text-anchor="middle" font-weight="normal"><tspan x="694.4" dy="0">Plateaux</tspan></text>
+<line x1="626.4" y1="342" x2="638.4" y2="342" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="626.4" y1="244" x2="626.4" y2="342" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="763" y="198" width="134" height="46" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="2.2"/>
+<text x="830" y="226.04" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold"><tspan x="830" dy="0">Professionnels</tspan></text>
+<rect x="785" y="256" width="112" height="28" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="841" y="274.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="841" dy="0">Golf &amp; clubs</tspan></text>
+<line x1="773" y1="270" x2="785" y2="270" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="785" y="292" width="112" height="28" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="841" y="310.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="841" dy="0">Yachting</tspan></text>
+<line x1="773" y1="306" x2="785" y2="306" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="785" y="328" width="112" height="46" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="841" y="347.82" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="841" dy="0">Hôtellerie</tspan><tspan x="841" dy="15">&amp; lounges</tspan></text>
+<line x1="773" y1="351" x2="785" y2="351" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="785" y="382" width="112" height="46" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="841" y="401.82" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="841" dy="0">Cadeaux</tspan><tspan x="841" dy="15">d'affaires</tspan></text>
+<line x1="773" y1="405" x2="785" y2="405" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="773" y1="244" x2="773" y2="405" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="909.5999999999999" y="198" width="134" height="46" rx="3" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="976.5999999999999" y="217.29" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold"><tspan x="976.5999999999999" dy="0">Rendez-vous</tspan><tspan x="976.5999999999999" dy="17.5">privé</tspan></text>
+<rect x="931.5999999999999" y="256" width="112" height="46" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="987.5999999999999" y="275.82" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="987.5999999999999" dy="0">Formulaire</tspan><tspan x="987.5999999999999" dy="15">qualifié</tspan></text>
+<line x1="919.5999999999999" y1="279" x2="931.5999999999999" y2="279" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="931.5999999999999" y="310" width="112" height="28" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="987.5999999999999" y="328.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="987.5999999999999" dy="0">Visio ou atelier</tspan></text>
+<line x1="919.5999999999999" y1="324" x2="931.5999999999999" y2="324" stroke="#1a1a1a" stroke-width="1.2"/>
+<rect x="931.5999999999999" y="346" width="112" height="28" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="987.5999999999999" y="364.32" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="987.5999999999999" dy="0">Téléphone direct</tspan></text>
+<line x1="919.5999999999999" y1="360" x2="931.5999999999999" y2="360" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="919.5999999999999" y1="244" x2="919.5999999999999" y2="360" stroke="#1a1a1a" stroke-width="1.2"/>
+<line x1="430.2" y1="512" x2="496.79999999999995" y2="512" stroke="#8a8a8a" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="463.5" y="528" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#8a8a8a" text-anchor="middle" font-weight="normal" font-style="italic"><tspan x="463.5" dy="0">cuirs et bois présents des deux côtés</tspan></text>
+<rect x="30" y="548" width="1010" height="36" rx="3" fill="#fff" stroke="#8a8a8a" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="44" y="571" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#1a1a1a" text-anchor="start" font-weight="normal"><tspan x="44" dy="0">Pied de page (toutes les pages)  ·  Entretien &amp; garantie · CITES &amp; export · Presse · Instagram · Mentions · Cookies · FR / EN</tspan></text>
+<text x="30" y="624" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#8a8a8a" text-anchor="start" font-weight="bold" letter-spacing="1.5"><tspan x="30" dy="0">LE PRINCIPE</tspan></text>
+<text x="30" y="646" font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#1a1a1a" text-anchor="start" font-weight="normal"><tspan x="30" dy="0">Chaque sujet a sa porte d'entrée. Le visiteur qui sait ce qu'il cherche (une collection, l'histoire de Sam, un</tspan><tspan x="30" dy="16.875">projet pro) y va en un clic. C'est la structure la plus familière et la plus simple à faire évoluer.</tspan></text>
+<text x="30" y="689.75" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1a1a1a" text-anchor="start" font-weight="normal"><tspan x="30" dy="0">+  Lisible tout de suite, aucun mode d'emploi.</tspan></text>
+<text x="30" y="708.375" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1a1a1a" text-anchor="start" font-weight="normal"><tspan x="30" dy="0">+  Bon pour Google : une page = un sujet = une recherche (« cave à cigares alligator », « humidor yacht »…).</tspan></text>
+<text x="30" y="731" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#444" text-anchor="start" font-weight="normal"><tspan x="30" dy="0">–  7 rubriques + un bouton : le menu est chargé, il passera en menu burger dès la tablette.</tspan></text>
+<text x="30" y="749.625" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#444" text-anchor="start" font-weight="normal"><tspan x="30" dy="0">–  Ça ressemble plus à un catalogue qu'à un salon privé : on « consulte » plutôt qu'on est reçu.</tspan></text>
+<text x="30" y="768.25" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#444" text-anchor="start" font-weight="normal"><tspan x="30" dy="0">–  Savoir-faire et Sur-mesure se marchent dessus (les cuirs et les bois apparaissent dans les deux).</tspan></text>
+<text x="30" y="802.875" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#c62828" text-anchor="start" font-weight="bold" letter-spacing="1.5"><tspan x="30" dy="0">NON TRANCHÉ</tspan></text>
+<text x="30" y="824.875" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#c62828" text-anchor="start" font-weight="normal"><tspan x="30" dy="0">?  Accessoires : rubrique à part entière, ou rien tant que Sam n'a pas confirmé le périmètre ?</tspan></text>
+<text x="30" y="844.5" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#c62828" text-anchor="start" font-weight="normal"><tspan x="30" dy="0">?  Configurateur : vraie page interactive, ou simple description du process ?</tspan></text>
+<text x="30" y="864.125" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#c62828" text-anchor="start" font-weight="normal"><tspan x="30" dy="0">?  Prix : affichés, « à partir de », ou sur demande ? Ça change le contenu des fiches.</tspan></text>
+<rect x="30" y="905.75" width="26" height="16" rx="3" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="43" y="919.15" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#fff" text-anchor="middle" font-weight="bold"><tspan x="43" dy="0"></tspan></text>
+<text x="63" y="918.25" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8a8a8a" text-anchor="start" font-weight="normal"><tspan x="63" dy="0">Point d'entrée</tspan></text>
+<rect x="168" y="905.75" width="26" height="16" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="2.2"/>
+<text x="181" y="918.79" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold"><tspan x="181" dy="0"></tspan></text>
+<text x="201" y="918.25" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8a8a8a" text-anchor="start" font-weight="normal"><tspan x="201" dy="0">Rubrique du menu</tspan></text>
+<rect x="318" y="905.75" width="26" height="16" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1.1"/>
+<text x="331" y="918.07" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="331" dy="0"></tspan></text>
+<text x="351" y="918.25" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8a8a8a" text-anchor="start" font-weight="normal"><tspan x="351" dy="0">Sous-page</tspan></text>
+<rect x="426" y="905.75" width="26" height="16" rx="3" fill="#ececec" stroke="#bdbdbd" stroke-width="1"/>
+<text x="439" y="917.89" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="439" dy="0"></tspan></text>
+<text x="459" y="918.25" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8a8a8a" text-anchor="start" font-weight="normal"><tspan x="459" dy="0">Section dans la page</tspan></text>
+<rect x="600" y="905.75" width="26" height="16" rx="3" fill="#ececec" stroke="#8a8a8a" stroke-width="1.1" stroke-dasharray="4 3"/>
+<text x="613" y="917.89" font-family="Arial, Helvetica, sans-serif" font-size="11.5" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="italic"><tspan x="613" dy="0"></tspan></text>
+<text x="633" y="918.25" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8a8a8a" text-anchor="start" font-weight="normal"><tspan x="633" dy="0">Gabarit répété</tspan></text>
+<rect x="738" y="905.75" width="26" height="16" rx="3" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="751" y="918.79" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold"><tspan x="751" dy="0"></tspan></text>
+<text x="771" y="918.25" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8a8a8a" text-anchor="start" font-weight="normal"><tspan x="771" dy="0">Action principale</tspan></text>
+<rect x="894" y="905.75" width="26" height="16" rx="3" fill="#fff" stroke="#c62828" stroke-width="1.4" stroke-dasharray="5 3"/>
+<text x="907" y="918.07" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#c62828" text-anchor="middle" font-weight="normal"><tspan x="907" dy="0"></tspan></text>
+<text x="927" y="918.25" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8a8a8a" text-anchor="start" font-weight="normal"><tspan x="927" dy="0">Non tranché</tspan></text>
+<rect x="1090" y="112" width="480" height="1024" rx="6" fill="#fff" stroke="#1a1a1a" stroke-width="1.6"/>
+<line x1="1090" y1="140" x2="1570" y2="140" stroke="#1a1a1a" stroke-width="1"/>
+<circle cx="1106" cy="126" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+<circle cx="1120" cy="126" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+<circle cx="1134" cy="126" r="4" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+<rect x="1160" y="119" width="390" height="14" rx="7" fill="#fff" stroke="#bdbdbd" stroke-width="1"/>
+<text x="1170" y="130" font-family="Arial, Helvetica, sans-serif" font-size="9.5" fill="#8a8a8a" text-anchor="start" font-weight="normal"><tspan x="1170" dy="0">maison-lemony.com</tspan></text>
+<text x="1090" y="100" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#8a8a8a" text-anchor="start" font-weight="bold" letter-spacing="1.5"><tspan x="1090" dy="0">CE QUE ÇA DONNE SUR L'ACCUEIL</tspan></text>
+<rect x="1104" y="150" width="452" height="58" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+<rect x="1114" y="170" width="70" height="18" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+<text x="1149" y="183" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="bold" letter-spacing="1"><tspan x="1149" dy="0">LEMONY</tspan></text>
+<text x="1200" y="165.6" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="start" font-weight="normal"><tspan x="1200" dy="0">La Maison</tspan></text>
+<text x="1266.4" y="165.6" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="start" font-weight="normal"><tspan x="1266.4" dy="0">Collections</tspan></text>
+<text x="1344" y="165.6" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="start" font-weight="normal"><tspan x="1344" dy="0">Savoir-faire</tspan></text>
+<text x="1200" y="182.6" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="start" font-weight="normal"><tspan x="1200" dy="0">Sur-mesure</tspan></text>
+<text x="1272" y="182.6" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="start" font-weight="normal"><tspan x="1272" dy="0">Accessoires</tspan></text>
+<text x="1200" y="199.6" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="start" font-weight="normal"><tspan x="1200" dy="0">Professionnels</tspan></text>
+<rect x="1430" y="168" width="118" height="22" rx="2" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="1489" y="183" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold"><tspan x="1489" dy="0">Rendez-vous privé</tspan></text>
+<text x="1104" y="220" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#8a8a8a" text-anchor="start" font-weight="normal" font-style="italic"><tspan x="1104" dy="0">6 liens + 1 bouton : le menu passe déjà sur deux lignes</tspan></text>
+<text x="1104" y="245" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#8a8a8a" text-anchor="start" font-weight="normal" letter-spacing="1"><tspan x="1104" dy="0">FILM D'OUVERTURE 30–60 S</tspan></text>
+<rect x="1104" y="248" width="452" height="200" rx="2" fill="#ececec" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="1104" y1="248" x2="1556" y2="448" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="1556" y1="248" x2="1104" y2="448" stroke="#bdbdbd" stroke-width="1"/>
+<rect x="1210" y="314" width="240" height="68" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+<text x="1330" y="340" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="bold"><tspan x="1330" dy="0">MAISON LEMONY</tspan></text>
+<text x="1330" y="362" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#8a8a8a" text-anchor="middle" font-weight="normal" font-style="italic"><tspan x="1330" dy="0">L'art de préserver l'exception</tspan></text>
+<text x="1104" y="463" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#8a8a8a" text-anchor="start" font-weight="normal" letter-spacing="1"><tspan x="1104" dy="0">SIGNATURE</tspan></text>
+<rect x="1104" y="466" width="452" height="74" rx="3" fill="#fff" stroke="#bdbdbd" stroke-width="1"/>
+<text x="1330" y="490" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1a1a1a" text-anchor="middle" font-weight="normal" font-style="italic"><tspan x="1330" dy="0">« La structure existe pour servir la matière. »</tspan></text>
+<rect x="1174" y="504" width="312" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1174" y="513" width="312" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1174" y="522" width="187.2" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<text x="1104" y="555" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#8a8a8a" text-anchor="start" font-weight="normal" letter-spacing="1"><tspan x="1104" dy="0">LES 4 COLLECTIONS</tspan></text>
+<rect x="1104" y="558" width="107" height="96" rx="2" fill="#ececec" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="1104" y1="558" x2="1211" y2="654" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="1211" y1="558" x2="1104" y2="654" stroke="#bdbdbd" stroke-width="1"/>
+<text x="1157.5" y="670" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="1157.5" dy="0">Héritage</tspan></text>
+<rect x="1219" y="558" width="107" height="96" rx="2" fill="#ececec" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="1219" y1="558" x2="1326" y2="654" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="1326" y1="558" x2="1219" y2="654" stroke="#bdbdbd" stroke-width="1"/>
+<text x="1272.5" y="670" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="1272.5" dy="0">Élégance</tspan></text>
+<rect x="1334" y="558" width="107" height="96" rx="2" fill="#ececec" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="1334" y1="558" x2="1441" y2="654" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="1441" y1="558" x2="1334" y2="654" stroke="#bdbdbd" stroke-width="1"/>
+<text x="1387.5" y="670" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="1387.5" dy="0">Excellence</tspan></text>
+<rect x="1449" y="558" width="107" height="96" rx="2" fill="#ececec" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="1449" y1="558" x2="1556" y2="654" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="1556" y1="558" x2="1449" y2="654" stroke="#bdbdbd" stroke-width="1"/>
+<text x="1502.5" y="670" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="1502.5" dy="0">Prestige</tspan></text>
+<text x="1104" y="691" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#8a8a8a" text-anchor="start" font-weight="normal" letter-spacing="1"><tspan x="1104" dy="0">PREUVES</tspan></text>
+<rect x="1104" y="694" width="107" height="40" rx="3" fill="#fff" stroke="#bdbdbd" stroke-width="1"/>
+<text x="1157.5" y="718" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="1157.5" dy="0">Ex-Hermès</tspan></text>
+<rect x="1219" y="694" width="107" height="40" rx="3" fill="#fff" stroke="#bdbdbd" stroke-width="1"/>
+<text x="1272.5" y="718" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="1272.5" dy="0">Maître Artisan d'Art</tspan></text>
+<rect x="1334" y="694" width="107" height="40" rx="3" fill="#fff" stroke="#bdbdbd" stroke-width="1"/>
+<text x="1387.5" y="718" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="1387.5" dy="0">La Pyramide</tspan></text>
+<rect x="1449" y="694" width="107" height="40" rx="3" fill="#fff" stroke="#bdbdbd" stroke-width="1"/>
+<text x="1502.5" y="718" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="normal"><tspan x="1502.5" dy="0">Cigar and Spice</tspan></text>
+<text x="1104" y="749" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#8a8a8a" text-anchor="start" font-weight="normal" letter-spacing="1"><tspan x="1104" dy="0">SAVOIR-FAIRE</tspan></text>
+<rect x="1104" y="752" width="203.4" height="100" rx="2" fill="#ececec" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="1104" y1="752" x2="1307.4" y2="852" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="1307.4" y1="752" x2="1104" y2="852" stroke="#bdbdbd" stroke-width="1"/>
+<text x="1321.4" y="770" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1a1a1a" text-anchor="start" font-weight="bold"><tspan x="1321.4" dy="0">Du geste à l'émotion</tspan></text>
+<rect x="1321.4" y="782" width="228.6" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1321.4" y="791" width="228.6" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1321.4" y="800" width="228.6" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1321.4" y="809" width="228.6" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1321.4" y="818" width="137.16" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<text x="1321.4" y="846" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#1a1a1a" text-anchor="start" font-weight="normal"><tspan x="1321.4" dy="0">Découvrir le savoir-faire →</tspan></text>
+<text x="1104" y="867" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#8a8a8a" text-anchor="start" font-weight="normal" letter-spacing="1"><tspan x="1104" dy="0">PROFESSIONNELS</tspan></text>
+<rect x="1352.6" y="870" width="203.4" height="86" rx="2" fill="#ececec" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="1352.6" y1="870" x2="1556" y2="956" stroke="#bdbdbd" stroke-width="1"/>
+<line x1="1556" y1="870" x2="1352.6" y2="956" stroke="#bdbdbd" stroke-width="1"/>
+<text x="1104" y="888" font-family="Arial, Helvetica, sans-serif" font-size="12.5" fill="#1a1a1a" text-anchor="start" font-weight="bold"><tspan x="1104" dy="0">Golf, yacht, hôtellerie</tspan></text>
+<rect x="1104" y="900" width="228.6" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1104" y="909" width="228.6" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1104" y="918" width="137.16" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<text x="1104" y="950" font-family="Arial, Helvetica, sans-serif" font-size="10.5" fill="#1a1a1a" text-anchor="start" font-weight="normal"><tspan x="1104" dy="0">Projets professionnels →</tspan></text>
+<text x="1104" y="971" font-family="Arial, Helvetica, sans-serif" font-size="9" fill="#8a8a8a" text-anchor="start" font-weight="normal" letter-spacing="1"><tspan x="1104" dy="0">CONVERSION</tspan></text>
+<rect x="1104" y="974" width="452" height="80" rx="3" fill="#ececec" stroke="none" stroke-width="1.5"/>
+<text x="1330" y="998" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="bold"><tspan x="1330" dy="0">Chaque pièce naît d'une conversation.</tspan></text>
+<rect x="1245" y="1014" width="170" height="28" rx="2" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="1.5"/>
+<text x="1330" y="1033" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#fff" text-anchor="middle" font-weight="bold"><tspan x="1330" dy="0">Prendre rendez-vous</tspan></text>
+<rect x="1104" y="1072" width="452" height="50" rx="3" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+<rect x="1116" y="1086" width="135.6" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1116" y="1095" width="135.6" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1116" y="1104" width="81.36" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1275.76" y="1086" width="113" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1275.76" y="1095" width="113" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1275.76" y="1104" width="67.8" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1420.4" y="1086" width="113" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1420.4" y="1095" width="113" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<rect x="1420.4" y="1104" width="67.8" height="4" rx="2" fill="#bdbdbd" stroke="none" stroke-width="1.5"/>
+<text x="1546" y="1114" font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#1a1a1a" text-anchor="end" font-weight="bold"><tspan x="1546" dy="0">FR · EN</tspan></text>
+</svg>
