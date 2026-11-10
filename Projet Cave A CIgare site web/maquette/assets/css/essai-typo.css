@@ -1,0 +1,67 @@
+/* Essais typographiques à la place de Cormorant Garamond, actifs seulement en mode essai :
+   ?typo=oranienbaum  Oranienbaum partout
+   ?typo=noto         Noto Serif Display partout
+   ?typo=duo          Oranienbaum en titres, Noto Serif Display en texte
+   <html> porte alors .typo-essai (réglages communs) et .typo-<variante> (les familles). */
+.typo-essai { font-synthesis: none; }
+.typo-oranienbaum {
+  --font-display: 'Oranienbaum', Georgia, serif;
+  --font-titre: 'Oranienbaum', Georgia, serif;
+}
+.typo-noto {
+  --font-display: 'Noto Serif Display', Georgia, serif;
+  --font-titre: 'Noto Serif Display', Georgia, serif;
+}
+.typo-duo {
+  --font-display: 'Noto Serif Display', Georgia, serif;
+  --font-titre: 'Oranienbaum', 'Noto Serif Display', Georgia, serif;
+}
+.typo-essai body { font-weight: 400; font-size: 18px; line-height: 1.6; }
+
+/* Titres en Oranienbaum (une seule graisse : 400) */
+.typo-essai h1, .typo-essai h2, .typo-essai h3,
+.typo-essai .display-xl, .typo-essai .display-l, .typo-essai .title-m,
+.typo-essai .index-list .name, .typo-essai .fiche-head h2 {
+  font-family: var(--font-titre);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.typo-essai .display-xl { font-size: clamp(40px, 5.6vw, 82px); line-height: 1.04; }
+.typo-essai .display-l { font-size: clamp(32px, 3.8vw, 52px); line-height: 1.08; }
+
+/* Texte en Noto Serif Display, un cran plus petit : son œil est plus grand que celui du Garamond */
+.typo-essai .lead { font-size: clamp(18px, 1.4vw, 21px); line-height: 1.55; }
+.typo-essai .voix { font-size: clamp(22px, 2.2vw, 31px); line-height: 1.35; }
+.typo-essai .choice b, .typo-essai .swatch b, .typo-essai .strip figcaption b { font-size: 18px; font-weight: 500; }
+.typo-essai .fiche dd, .typo-essai .inline-list li, .typo-essai .specs td, .typo-essai .contact-lines dd { font-size: 17.5px; }
+.typo-essai .ledger dd { font-size: 19px; }
+.typo-essai .field input, .typo-essai .field textarea, .typo-essai .field select { font-size: 18px; font-weight: 400; }
+.typo-essai .crumbs { font-size: 16px; }
+.typo-essai .foot-col li, .typo-essai .foot-brand p { font-size: 17px; }
+
+/* Le logo reste le dessin de la charte */
+.typo-essai .logo-text b { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; }
+
+/* Bascule de comparaison, visible seulement après être entré par ?typo= */
+.typo-switch {
+  position: fixed; left: 16px; bottom: 16px; z-index: 30;
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--encre); color: var(--papier); border: 0; cursor: pointer;
+  font: 500 11.5px/1 var(--font-mono); letter-spacing: .14em; text-transform: uppercase;
+  padding: 12px 16px;
+}
+.typo-switch:hover { background: var(--cognac); }
+.typo-switch b { font-weight: 500; color: var(--kraft); }
+
+/* Essai 4 (?typo=titres) : Oranienbaum en titres, le texte reste en Cormorant, aux réglages de la charte */
+.typo-titres { --font-titre: 'Oranienbaum', 'Cormorant Garamond', Georgia, serif; }
+.typo-titres h1, .typo-titres h2, .typo-titres h3,
+.typo-titres .display-xl, .typo-titres .display-l, .typo-titres .title-m,
+.typo-titres .index-list .name, .typo-titres .fiche-head h2 {
+  font-family: var(--font-titre);
+  font-weight: 400;
+  letter-spacing: 0;
+  font-synthesis: none;
+}
+.typo-titres .display-xl { font-size: clamp(40px, 5.6vw, 82px); line-height: 1.04; }
+.typo-titres .display-l { font-size: clamp(32px, 3.8vw, 52px); line-height: 1.08; }

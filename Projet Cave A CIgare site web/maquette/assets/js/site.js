@@ -250,3 +250,25 @@ if (/[?&]capture\b/.test(location.search)) {
   document.querySelectorAll('img[loading="lazy"]').forEach(i => { i.loading = 'eager'; });
   document.querySelectorAll('[data-reveal], .cote[data-draw], .photo.slow').forEach(e => e.classList.add('is-in'));
 }
+
+/* Bascule de l'essai typographique, montrée seulement à qui est entré par ?typo= */
+(() => {
+  let mode; try { mode = sessionStorage.getItem('lemony-typo'); } catch { return; }
+  if (!mode) return;
+  // Ordre de défilement : la charte, puis les trois essais
+  const MODES = [['charte', 'Charte · Cormorant'], ['oranienbaum', 'Essai 1 · Oranienbaum'], ['noto', 'Essai 2 · Noto Serif Display'], ['duo', 'Essai 3 · Oranienbaum + Noto'], ['titres', 'Essai 4 · Oranienbaum + Cormorant']];
+  let i = Math.max(0, MODES.findIndex(([m]) => m === mode));
+  const root = document.documentElement;
+  const btn = document.createElement('button');
+  btn.type = 'button'; btn.className = 'typo-switch';
+  const apply = () => {
+    const [m, label] = MODES[i];
+    root.classList.remove('typo-essai', ...MODES.map(([x]) => 'typo-' + x));
+    if (m === 'titres') root.classList.add('typo-titres');
+    else if (m !== 'charte') root.classList.add('typo-essai', 'typo-' + m);
+    try { sessionStorage.setItem('lemony-typo', m); } catch { /* navigation privée */ }
+    btn.innerHTML = `Typo : <b>${label}</b> · suivante →`;
+  };
+  btn.addEventListener('click', () => { i = (i + 1) % MODES.length; apply(); });
+  apply(); document.body.appendChild(btn);
+})();

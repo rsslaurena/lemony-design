@@ -12,7 +12,17 @@
 <link rel="preload" href="assets/fonts/cormorantgaramond-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/fonts.css">
 <link rel="stylesheet" href="assets/css/site.css">
-<script>document.documentElement.classList.replace('no-js','js')</script>
+<link rel="stylesheet" href="assets/css/fonts-essai.css">
+<link rel="stylesheet" href="assets/css/essai-typo.css">
+<script>
+document.documentElement.classList.replace('no-js','js');
+// Essais typographiques : ?typo=oranienbaum, noto, duo ou titres pour la visite ; ?typo=charte revient à la charte
+try { let q = new URLSearchParams(location.search).get('typo'); if (q === 'essai') q = 'duo';
+  if (q) sessionStorage.setItem('lemony-typo', q);
+  const t = q || sessionStorage.getItem('lemony-typo');
+  if (['oranienbaum', 'noto', 'duo'].includes(t)) document.documentElement.classList.add('typo-essai', 'typo-' + t);
+  if (t === 'titres') document.documentElement.classList.add('typo-titres'); } catch (e) {}
+</script>
 </head>
 <body data-page="rendez-vous">
 <a class="skip" href="#contenu">Aller au contenu</a>
